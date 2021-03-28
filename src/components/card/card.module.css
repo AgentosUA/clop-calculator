@@ -1,0 +1,92 @@
+.card {
+  margin: 15px 15px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  min-height: 300px;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.interface {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.interface img {
+  width: 100%;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 0;
+}
+
+.description {
+  width: 50%;
+}
+
+.description h3, .description span {
+  text-align: center;
+  display: block;
+}
+
+.description div {
+  width: 100%;
+}
+
+.description p {
+  display: block;
+}
+
+.specs {
+  width: 100%;
+  
+}
+
+.specs p {
+  /* width: 25px; */
+  word-wrap: break-word;
+}
+
+.red {
+  color: #D80000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.add {
+  background: #5FD800;
+}
+
+.remove {
+  background: #D80000;
+}
+
+.add, .remove {
+  margin: 8px auto;
+  display: block;
+  width: 157px;
+  height: 33px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+.add:disabled, .remove:disabled {
+  background: #787474;
+}
