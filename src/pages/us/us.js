@@ -23,7 +23,15 @@ const Us = () => {
   }
 
   const lightVehicles = lightVehiclesJSON.filter((vehicle) => {
-    return vehicle.price >= minPrice && vehicle.price <= maxPrice
+    return (
+      vehicle.price >= minPrice
+      && vehicle.price <= maxPrice
+      && (
+        searchValue ?
+          vehicle.name.toLowerCase().trim().replace('(', '').replace(')', '').includes(searchValue.toLowerCase().trim().replace('(', '').replace(')', ''))
+          : true
+      )
+    )
   });
 
   return (
@@ -44,7 +52,7 @@ const Us = () => {
           </div>
           <div>
             <label htmlFor='isLightVehicle'>Легкая техника</label><br />
-            <input type='checkbox' value={isLightVehicle} onChange={(e) => setIsLightVehicle(!isLightVehicle)} />
+            <input type='checkbox' checked={isLightVehicle} value={isLightVehicle} onChange={(e) => setIsLightVehicle(!isLightVehicle)} />
           </div>
         </div>
       </div>
@@ -57,12 +65,12 @@ const Us = () => {
               name={vehicle.name}
               className={vehicle.className}
               price={vehicle.price}
-              weapons={vehicle.weapon} 
+              weapons={vehicle.weapon}
               ammo={vehicle.ammo}
               crewCount={vehicle.crewCount}
               comment={vehicle.comment}
-              />
-              
+            />
+
           )
         })}
       </div>}

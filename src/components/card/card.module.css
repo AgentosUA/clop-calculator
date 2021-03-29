@@ -13,10 +13,13 @@
 }
 
 .interface {
-  margin: 0 auto;
   display: block;
   width: 50%;
   text-align: center;
+}
+
+.interface, .description {
+  margin: 0 5px;
 }
 
 .price {
