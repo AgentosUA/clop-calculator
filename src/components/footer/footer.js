@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <p>App by Agentos<br />
       Idea and support by XDred<br />
-      Vehicle screenshots by HoLo_D<br />
+      Vehicle screenshots by Dagon, Darude, HoLo_D<br />
       </p>
     </footer>
   )

@@ -72,11 +72,27 @@
   background: #5FD800;
 }
 
+.add:hover {
+  background: #68df0d;
+}
+
 .remove {
   background: #D80000;
 }
 
-.add, .remove {
+.remove:hover {
+  background: #ff0202;
+}
+
+.top {
+  background: #000;
+}
+
+.top:hover {
+  background: rgb(41, 40, 40);
+}
+
+.add, .remove, .top {
   margin: 8px auto;
   display: block;
   width: 157px;
@@ -85,7 +101,9 @@
   border: none;
   color: #fff;
   font-weight: 600;
+  text-transform: uppercase;
   cursor: pointer;
+  outline: none;
 }
 
 

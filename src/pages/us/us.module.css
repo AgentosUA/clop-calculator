@@ -2,6 +2,10 @@
   margin-top: 30px;
 }
 
+.us h3 {
+  text-align: center;
+}
+
 .us a {
   text-decoration: none;
   color: #000;
@@ -34,6 +38,7 @@
 .parameters {
   margin-top: 10px;
   display: flex;
+  justify-content: center;
   margin-left: 0;
 }
 
@@ -41,9 +46,8 @@
   margin-right: 10px;
 }
 
-.products {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.unitsType {
+  margin: 26px auto;
+  width: 150px;
+  text-align: left;
 }

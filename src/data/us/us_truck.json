@@ -1,0 +1,112 @@
+[
+  {
+    "name": "M1078A1P2",
+    "className": "\"AP_FMTV_W\"",
+    "weapon": "-",
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 1
+  },
+  {
+    "name": "M1078A1P2-B",
+    "className": "\"AP_FMTV_ARMOR_W\"",
+    "weapon": "-",
+    "ammo": null,
+    "comment": "Улучшенная броня кабины",
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "M1078A1P2 SOV (M2)",
+    "className": "\"AP_FMTV_SOV_M2_W\"",
+    "weapon": "M2",
+    "ammo": "M2x10",
+    "comment": "С открытым верхом",
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "M923A2",
+    "className": "\"ACE_Truck5t\"",
+    "weapon": null,
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 1
+  },
+  {
+    "name": "M923A2 (Заправщик)",
+    "className": "\"ACE_Truck5tRefuel\"",
+    "weapon": null,
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 5
+  },
+  {
+    "name": "M923A2 (Открытый)",
+    "className": "\"ACE_Truck5tOpen\"",
+    "weapon": null,
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 1
+  },
+  {
+    "name": "M923A2 (Ремонтный)",
+    "className": "\"ACE_Truck5tRepair\"",
+    "weapon": null,
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 10
+  },
+  {
+    "name": "M923A2 (С боеприпасами)",
+    "className": "\"ACE_Truck5tReammo\"",
+    "weapon": null,
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 20
+  },
+  {
+    "name": "M923A2 (М2)",
+    "className": "\"ACE_Truck5tMG\"",
+    "weapon": "M2",
+    "ammo": "M2x5",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "M923A2 (М2, открытый)",
+    "className": "\"ACE_Truck5tMGOpen\"",
+    "weapon": "M2",
+    "ammo": "M2x5",
+    "comment": "С открытым верхом",
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  }
+]
