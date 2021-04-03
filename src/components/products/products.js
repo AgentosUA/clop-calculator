@@ -14,7 +14,7 @@ const Products = ({name, isVisible, cart, products, filter, onAdd, onRemove, tot
           return (
             <Card
               key={vehicle.name}
-              img={vehicle.img || 'https://lh4.googleusercontent.com/VVNyPOoFHUz9iTcoNEJU6yd09ARMGX14zLJTBdWWL2v2LdrMLi9dXP_mr-aqM_CY-gqiEuy9M7mH71BObg8k=w1920-h937-rw'}
+              img={vehicle.img || `https://db.armaproject.ru/images/vehicles/${vehicle.className.toLowerCase().replace("\"", '').replace("\"", '')}.png`}
               name={vehicle.name}
               className={vehicle.className}
               price={vehicle.price}

@@ -24,8 +24,7 @@ const Us = () => {
 
   const [totalPrice, setTotalPrice] = useState(0);
   const [us_cart, set_us_cart] = useLocalStorage('us_cart', [])
-  // const defaultPrice = JSON.parse(localStorage.getItem('us_cart'))
-
+  
   useEffect(() => {
     setTotalPrice(us_cart.reduce((count = 0, item) => count + (item.price * item.quantity), 0));
   }, [us_cart])
@@ -92,7 +91,7 @@ const Us = () => {
 
   return (
     <section className={styles.us}>
-      <Preview totalPrice={totalPrice} usCart={us_cart} />
+      <Preview totalPrice={totalPrice} usCart={us_cart} onAdd={onAdd} onRemove={onRemove} />
       <div className={styles.filters}>
         <div className={styles.search}>
           <label htmlFor='search'>Поиск</label><br />
