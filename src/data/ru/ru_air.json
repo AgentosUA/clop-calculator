@@ -1,15 +1,5 @@
 [
   {
-    "name": "Ка-137",
-    "className": "\"Ka137_PMC\"",
-    "weapon": null,
-    "ammo": null,
-    "Комментарии": null,
-    "isCrew": false,
-    "crewCount": 1,
-    "price": null
-  },
-  {
     "name": "Ка-50",
     "className": "\"TU_Ka50\"",
     "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
@@ -110,16 +100,6 @@
     "price": 22
   },
   {
-    "name": "Ми-24П",
-    "className": "\"Mi24_P\"",
-    "weapon": "ГШ, 80мм НАР, ПТУР Атака",
-    "ammo": "ГШ 750, 80 НАР, 4ПТУР",
-    "Комментарии": "Забагован? Стрелок не двигается",
-    "isCrew": false,
-    "crewCount": 2,
-    "price": null
-  },
-  {
     "name": "Ми-6Т",
     "className": "\"ap_mi6t_ru\"",
     "weapon": null,
@@ -128,26 +108,6 @@
     "isCrew": false,
     "crewCount": 1,
     "price": 4
-  },
-  {
-    "name": "Ми-8АМТШ (Атака)",
-    "className": "\"TU_Mi8_AMTSh_Ataka_RU\"",
-    "weapon": "80мм НАР, ПТУР Атака, курсовые ПКМы",
-    "ammo": "80 НАР, 4ПТУР",
-    "Комментарии": null,
-    "isCrew": false,
-    "crewCount": null,
-    "price": null
-  },
-  {
-    "name": "Ми-8АМТШ (С-5)",
-    "className": null,
-    "weapon": null,
-    "ammo": null,
-    "Комментарии": null,
-    "isCrew": false,
-    "crewCount": null,
-    "price": null
   },
   {
     "name": "Ми-8АМТ",

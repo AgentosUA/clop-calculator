@@ -1,15 +1,5 @@
 [
   {
-    "name": "КАМАЗ (боеприпасы)",
-    "className": "\"ACE_KamazReammo\"",
-    "weapon": null,
-    "ammo": null,
-    "Комментарии": null,
-    "isCrew": false,
-    "crewCount": null,
-    "price": 20
-  },
-  {
     "name": "КАМАЗ (заправщик)",
     "className": "\"ACE_KamazRefuel\"",
     "weapon": null,

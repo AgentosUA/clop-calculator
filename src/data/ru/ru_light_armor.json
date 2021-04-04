@@ -230,16 +230,6 @@
     "price": 12
   },
   {
-    "name": "9K33 \"Оса\"",
-    "className": "\"pzn_OSA\"",
-    "weapon": "9К33 ПЗРК",
-    "ammo": "6 пусков",
-    "Комментарии": null,
-    "isCrew": "X",
-    "crewCount": 2,
-    "price": 100
-  },
-  {
     "name": "БТР-82А",
     "className": "\"AP_BTR82A\"",
     "weapon": "30мм, пкмт",
