@@ -6,7 +6,7 @@
     "ammo": "5 взрывчатки, 10 ПТ, 30 ПП",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 10
   },
@@ -17,7 +17,7 @@
     "ammo": "250 HE, 50 WP",
     "comment": "60 мм миномет",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 6
   },
@@ -28,7 +28,7 @@
     "ammo": "80 HE, 20 WP",
     "comment": "81 мм миномет",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -39,7 +39,7 @@
     "ammo": "1 выстрел",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 5
   },
@@ -50,7 +50,7 @@
     "ammo": "1 выстрел",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 5
   },
@@ -61,7 +61,7 @@
     "ammo": "10 улиток",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 6
   },
@@ -72,7 +72,7 @@
     "ammo": "10 лент",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 2
   },
@@ -83,7 +83,7 @@
     "ammo": "1 выстрел",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -94,7 +94,7 @@
     "ammo": null,
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 2
   },
@@ -105,18 +105,18 @@
     "ammo": null,
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 3
   },
   {
-    "name": "Ящик с пулеметами",
+    "name": "Ящик с пулеметами (M240)",
     "className": null,
     "weapon": "M240 M145 x3",
     "ammo": null,
     "comment": "Пулеметы с оптикой",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 4
   },
@@ -127,7 +127,7 @@
     "ammo": null,
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 4
   },
@@ -138,7 +138,7 @@
     "ammo": "10 выстрелов",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 5
   }

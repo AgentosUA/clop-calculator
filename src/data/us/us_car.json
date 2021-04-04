@@ -6,7 +6,7 @@
     "ammo": "M2x6, M249x2x6",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 3
   },
@@ -17,7 +17,7 @@
     "ammo": "Mk19x4, M249x2x6",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -28,7 +28,7 @@
     "ammo": null,
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 1
   },
@@ -39,7 +39,7 @@
     "ammo": "M2x5",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 3
   },
@@ -50,7 +50,7 @@
     "ammo": "Mk19x4",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -61,7 +61,7 @@
     "ammo": "TOWx1",
     "comment": null,
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 6
   },
@@ -72,7 +72,7 @@
     "ammo": "M2x6",
     "comment": "Броня по бокам + дымовая завеса",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 3
   },
@@ -83,7 +83,7 @@
     "ammo": "Mk19x4",
     "comment": "Броня по бокам + дымовая завеса",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -94,7 +94,7 @@
     "ammo": "TOWx1",
     "comment": "Броня по бокам",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -116,7 +116,7 @@
     "ammo": null,
     "comment": "Возможность хилиться на почти фулхп",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 5
   },
@@ -127,7 +127,7 @@
     "ammo": null,
     "comment": "Больше посадочных мест",
     "img": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 1
   }

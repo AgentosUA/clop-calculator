@@ -16,7 +16,7 @@ const Products = ({ name, isVisible, cart, products, filter, onAdd, onRemove, to
                 vehicle.img || 
                 vehicle.className
                 ? `https://db.armaproject.ru/images/vehicles/${vehicle.className.toLowerCase().replace("\"", '').replace("\"", '')}.jpg`
-                : `https://db.armaproject.ru/images/items/${vehicle.name.replace("\"", '').replace("\"", '').replace(' ', '%20').replace(' ', '%20')}.jpg`
+                : `https://db.armaproject.ru/images/items/${vehicle.name.replace("/\"/g", '').split(' ').join('%20')}.jpg`
               }
               name={vehicle.name}
               className={vehicle.className}

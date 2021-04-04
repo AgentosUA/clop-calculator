@@ -5,7 +5,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 20
   },
@@ -15,7 +15,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 5
   },
@@ -25,7 +25,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 10
   },
@@ -35,7 +35,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 1
   },
@@ -45,7 +45,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 1
   }

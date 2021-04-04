@@ -95,7 +95,7 @@
 .add, .remove, .top {
   margin: 8px auto;
   display: block;
-  width: 157px;
+  width: 100%;
   height: 33px;
   border-radius: 6px;
   border: none;

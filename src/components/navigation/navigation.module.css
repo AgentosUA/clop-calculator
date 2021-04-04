@@ -19,3 +19,13 @@
 .navigation a:hover {
   background: #fff;
 }
+
+@media only screen and (max-width: 780px)  {
+  .navigation {
+    display: block;
+  }
+
+  .navigation a {
+    margin-bottom: 15px;
+  }
+}

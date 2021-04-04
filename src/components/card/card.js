@@ -8,7 +8,7 @@ const Card = (
     price, className = '"Неизвестно"',
     weapons = '-',
     ammo = '-', crewCount = '-',
-    isCrew = '-',
+    isCrew = false,
     comment = '-',
     onAdd, onRemove,
     addDisabled = false,
@@ -33,7 +33,7 @@ const Card = (
         <div className={styles.specs}>
           <p><b>Вооружение:</b> {weapons}</p>
           <p><b>БК:</b> {ammo || '-'}</p>
-          <p><b>Экипаж:</b> {crewCount || 'Нет инфы'}</p>
+          <p><b>Кол-во экипажа:</b> {crewCount || 'Нет инфы'}</p>
           <p><b>Спец слот:</b> {isCrew ? 'Да' : 'Нет'}</p>
           <p><b>Комментарий:</b> <br />{comment}</p>
         </div>

@@ -5,7 +5,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 1,
     "price": null
   },
@@ -15,7 +15,7 @@
     "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
     "ammo": "30мм: 230HE, 230AP, 40НАР, 12ПТУР",
     "Комментарии": "Одноместный",
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 1,
     "price": 30
   },
@@ -25,7 +25,7 @@
     "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
     "ammo": "30мм: 230HE, 230AP, 40НАР, 12ПТУР",
     "Комментарии": "Одноместный",
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 1,
     "price": 38
   },
@@ -35,7 +35,7 @@
     "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
     "ammo": "30мм: 230HE, 230AP, 40НАР, 12ПТУР",
     "Комментарии": "Двухместный",
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 40
   },
@@ -45,7 +45,7 @@
     "weapon": "23мм, 80мм НАР, ПТУР Атака",
     "ammo": "23мм 460, 80 НАР, 4ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 20
   },
@@ -55,7 +55,7 @@
     "weapon": "23мм, 80мм НАР, ПТУР Атака",
     "ammo": "23мм 460, 80 НАР, 8ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 22
   },
@@ -65,7 +65,7 @@
     "weapon": "12.7, 80мм НАР, ПТУР Атака",
     "ammo": "12.7 1470, 80 НАР, 4ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 18
   },
@@ -75,7 +75,7 @@
     "weapon": "12,7, 80мм НАР, ПТУР Атака",
     "ammo": "12.7 1470, 40 НАР, 8ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 21
   },
@@ -85,7 +85,7 @@
     "weapon": "12.7, 80мм НАР, УПК, ПТУР Атака",
     "ammo": "12.7 1470, 40 НАР, УПК 500, 4ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 22
   },
@@ -95,7 +95,7 @@
     "weapon": "12.7, 80мм НАР, ФАБ-250, ПТУР Атака",
     "ammo": "12.7 1470, 40 НАР, 2ФАБ, 4ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 22
   },
@@ -105,7 +105,7 @@
     "weapon": "12.7, 57мм НАР, ПТУР Фаланга",
     "ammo": "12.7 1470, 128 НАР, 4ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 22
   },
@@ -115,7 +115,7 @@
     "weapon": "ГШ, 80мм НАР, ПТУР Атака",
     "ammo": "ГШ 750, 80 НАР, 4ПТУР",
     "Комментарии": "Забагован? Стрелок не двигается",
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": null
   },
@@ -125,7 +125,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 1,
     "price": 4
   },
@@ -135,7 +135,7 @@
     "weapon": "80мм НАР, ПТУР Атака, курсовые ПКМы",
     "ammo": "80 НАР, 4ПТУР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": null
   },
@@ -145,7 +145,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": null
   },
@@ -155,7 +155,7 @@
     "weapon": "Курсовые ПКМы",
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 5
   },
@@ -165,7 +165,7 @@
     "weapon": "Курсовые ПКМы",
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 5
   },
@@ -175,7 +175,7 @@
     "weapon": "Курсовые ПКМы",
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 5
   },
@@ -185,7 +185,7 @@
     "weapon": "57мм НАР, Курсовые ПКМы",
     "ammo": "128 НАР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 13
   },
@@ -195,7 +195,7 @@
     "weapon": "80мм НАР, Курсовые ПКМы",
     "ammo": "80 НАР",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 13
   },
@@ -205,7 +205,7 @@
     "weapon": "80мм НАР, УПК-23, Курсовые ПКМы",
     "ammo": "40 НАР, 500УПК",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": 2,
     "price": 10
   }

@@ -5,7 +5,7 @@
     "weapon": "Взрывчатка, ПТ мины, ПОМЗ",
     "ammo": "5 взрывчатки, 10 ПТ, 30 ПП",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 10
   },
@@ -15,7 +15,7 @@
     "weapon": "Миномет, HE мины, WP мины",
     "ammo": "80 HE, 20 WP",
     "Комментарии": "82 мм миномет",
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -25,7 +25,7 @@
     "weapon": "КОРД, ленты",
     "ammo": "10 лент",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 3
   },
@@ -35,7 +35,7 @@
     "weapon": "Стрела-2М",
     "ammo": "1 выстрел",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 4
   },
@@ -45,7 +45,7 @@
     "weapon": "Игла",
     "ammo": "1 выстрел",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 5
   },
@@ -55,7 +55,7 @@
     "weapon": "АГС, улитки",
     "ammo": "15 улиток",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 7
   },
@@ -65,7 +65,7 @@
     "weapon": "ДШК, ленты",
     "ammo": "10 лент",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 2
   },
@@ -75,7 +75,7 @@
     "weapon": "РПГ-29",
     "ammo": "10 выстрелов",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 5
   },
@@ -85,7 +85,7 @@
     "weapon": "СПГ-9",
     "ammo": "10 HEAT, 10 HE",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 3
   },
@@ -95,7 +95,7 @@
     "weapon": "Фагот",
     "ammo": "1 выстрел",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 2
   },
@@ -105,7 +105,7 @@
     "weapon": "Конкурс",
     "ammo": "1 выстрел",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 3
   },
@@ -115,17 +115,17 @@
     "weapon": "Метис",
     "ammo": "1 выстрел",
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 6
   },
   {
-    "name": "Ящик с пулеметами",
+    "name": "Ящик с пулеметами (ПКМ)",
     "className": null,
     "weapon": "ПКМ с оптикой х3",
     "ammo": null,
     "Комментарии": "Пулеметы с оптикой",
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 4
   },
@@ -135,7 +135,7 @@
     "weapon": "КСВК",
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 2
   },
@@ -145,7 +145,7 @@
     "weapon": "SOFLAM",
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 4
   }

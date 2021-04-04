@@ -205,7 +205,7 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": null,
-    "isCrew": null,
+    "isCrew": false,
     "crewCount": null,
     "price": 42
   }
