@@ -23,7 +23,7 @@ const Preview = ({ totalPrice, cart = [], onAdd, onRemove, army }) => {
                   {item.quantity}x {item.name}
                 </div>
                 <div>
-                  <button className={styles.add} onClick={() => onAdd(item)} disabled={item.price + totalPrice > 100}>+</button>
+                  <button className={styles.add} onClick={() => item.price + totalPrice > 100 ? null : onAdd(item)} disabled={item.price + totalPrice > 100}>+</button>
                   <button className={styles.remove} onClick={() => onRemove(item)}>-</button>
                 </div>
               </li>

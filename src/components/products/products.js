@@ -28,7 +28,7 @@ const Products = ({ name, isVisible, cart, products, filter, onAdd, onRemove, to
               onAdd={() => onAdd(vehicle)}
               onRemove={() => onRemove(vehicle)}
               addDisabled={vehicle.price + totalPrice > 100}
-              removeDisabled={!cart.find(item => item.className === vehicle.className)}
+              removeDisabled={!cart.find(item => item.name === vehicle.name)}
             />
           )
         })}

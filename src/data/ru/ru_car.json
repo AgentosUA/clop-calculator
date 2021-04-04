@@ -1,15 +1,5 @@
 [
   {
-    "name": "ГАЗ Тигр",
-    "className": "\"NM_Tigr\"",
-    "weapon": null,
-    "ammo": null,
-    "Комментарии": null,
-    "isCrew": null,
-    "crewCount": null,
-    "price": null
-  },
-  {
     "name": "УАЗ АГС",
     "className": "\"UAZ_AGS30_RU\"",
     "weapon": "АГС",

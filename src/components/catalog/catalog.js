@@ -2,17 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Preview } from '../../components'
 import { Products } from '../../components/products/products'
 
-import carJSON from '../../data/ru/ru_car.json';
-import truckJSON from '../../data/ru/ru_truck.json';
-import lightJSON from '../../data/ru/ru_light_armor.json';
-import heavyJSON from '../../data/ru/ru_heavy_armor.json';
-import airJSON from '../../data/ru/ru_air.json';
-import extraJSON from '../../data/ru/ru_extra.json';
-
 import { useLocalStorage } from '../../hooks'
-import styles from './ru.module.css'
+import styles from './catalog.module.css'
 
-const Ru = () => {
+const Catalog = ({carJSON, truckJSON, lightJSON, heavyJSON, airJSON, extraJSON, cartName}) => {
   const [searchValue, setSearchValue] = useState('');
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(100);
@@ -25,11 +18,11 @@ const Ru = () => {
   const [isExtra, setIsExtra] = useState(true);
 
   const [totalPrice, setTotalPrice] = useState(0);
-  const [ru_cart, set_ru_cart] = useLocalStorage('ru_cart', [])
+  const [cart, set_cart] = useLocalStorage(cartName, [])
   
   useEffect(() => {
-    setTotalPrice(ru_cart.reduce((count = 0, item) => count + (item.price * item.quantity), 0));
-  }, [ru_cart])
+    setTotalPrice(cart.reduce((count = 0, item) => count + (item.price * item.quantity), 0));
+  }, [cart])
 
   const onSearchValueChange = (value) => {
     setSearchValue(value);
@@ -44,36 +37,37 @@ const Ru = () => {
   }
 
   const onAdd = (vehicle) => {
-    if (!ru_cart || !ru_cart.length) {
-      set_ru_cart([{ ...vehicle, quantity: 1 }]);
+    if (!cart || !cart.length) {
+      set_cart([{ ...vehicle, quantity: 1 }]);
       return;
     }
 
-    const isExists = ru_cart.find(item => {
-      return item.className === vehicle.className
+    const isExists = cart.find(item => {
+      return item.name === vehicle.name
     })
 
     if (isExists) {
       isExists.quantity += 1;
-      set_ru_cart([...ru_cart.filter(item => item.className !== isExists.className), isExists]);
+      set_cart([...cart.filter(item => item.name !== isExists.name), isExists]);
       return;
     }
 
     vehicle.quantity = 1;
-    set_ru_cart([...ru_cart, vehicle]);
+    set_cart([...cart, vehicle]);
   }
 
   const onRemove = (vehicle) => {
-    if (!ru_cart || !ru_cart.length) return;
+    if (!cart || !cart.length) return;
 
-    const cartProduct = ru_cart.find(item => item.className === vehicle.className);
+    const cartProduct = cart.find(item => item.name === vehicle.name);
     if (cartProduct.quantity < 2) {
-      set_ru_cart([...ru_cart.filter(item => item.className !== cartProduct.className)]);
+      set_cart([...cart.filter(item => item.name !== cartProduct.name)]);
       return;
     }
 
     cartProduct.quantity -= 1;
-    set_ru_cart([...ru_cart.filter(item => item.className !== cartProduct.className), cartProduct]);
+    set_cart([...cart.filter(item => item.name !== cartProduct.name), cartProduct]);
+
   }
 
   const filter = (vehicles) => {
@@ -91,8 +85,8 @@ const Ru = () => {
   };
 
   return (
-    <section className={styles.ru}>
-      <Preview army='ВС РФ' totalPrice={totalPrice} cart={ru_cart} onAdd={onAdd} onRemove={onRemove} />
+    <section className={styles.us}>
+      <Preview army='US Army' totalPrice={totalPrice} cart={cart} onAdd={onAdd} onRemove={onRemove} />
       <div className={styles.filters}>
         <div className={styles.search}>
           <label htmlFor='search'>Поиск</label><br />
@@ -138,7 +132,7 @@ const Ru = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={ru_cart}
+        cart={cart}
       />
       <Products
         name='Грузовики'
@@ -148,7 +142,7 @@ const Ru = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={ru_cart}
+        cart={cart}
       />
       <Products
         name='Легкая техника'
@@ -158,7 +152,7 @@ const Ru = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={ru_cart}
+        cart={cart}
       />
       <Products
         name='Тяжёлая техника'
@@ -168,7 +162,7 @@ const Ru = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={ru_cart}
+        cart={cart}
       />
       <Products
         name='Авиация'
@@ -178,7 +172,7 @@ const Ru = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={ru_cart}
+        cart={cart}
       />
       <Products
         name='Доп. вооружение'
@@ -188,10 +182,10 @@ const Ru = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={ru_cart}
+        cart={cart}
       />
     </section>
   )
 }
 
-export { Ru };
+export { Catalog };

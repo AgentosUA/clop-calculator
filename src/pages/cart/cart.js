@@ -27,12 +27,12 @@ const Cart = () => {
     }
 
     const isExists = us_cart.find(item => {
-      return item.className === vehicle.className
+      return item.name === vehicle.name
     })
 
     if (isExists) {
       isExists.quantity += 1;
-      set_us_cart([...us_cart.filter(item => item.className !== isExists.className), isExists]);
+      set_us_cart([...us_cart.filter(item => item.name !== isExists.name), isExists]);
       return;
     }
 
@@ -43,14 +43,14 @@ const Cart = () => {
   const onUSRemove = (vehicle) => {
     if (!us_cart || !us_cart.length) return;
 
-    const cartProduct = us_cart.find(item => item.className === vehicle.className);
+    const cartProduct = us_cart.find(item => item.name === vehicle.name);
     if (cartProduct.quantity < 2) {
-      set_us_cart([...us_cart.filter(item => item.className !== cartProduct.className)]);
+      set_us_cart([...us_cart.filter(item => item.name !== cartProduct.name)]);
       return;
     }
 
     cartProduct.quantity -= 1;
-    set_us_cart([...us_cart.filter(item => item.className !== cartProduct.className), cartProduct]);
+    set_us_cart([...us_cart.filter(item => item.name !== cartProduct.name), cartProduct]);
 
   }
 
@@ -63,12 +63,12 @@ const Cart = () => {
     }
 
     const isExists = ru_cart.find(item => {
-      return item.className === vehicle.className
+      return item.name === vehicle.name
     })
 
     if (isExists) {
       isExists.quantity += 1;
-      set_ru_cart([...ru_cart.filter(item => item.className !== isExists.className), isExists]);
+      set_ru_cart([...ru_cart.filter(item => item.name !== isExists.name), isExists]);
       return;
     }
 
@@ -79,14 +79,14 @@ const Cart = () => {
   const onRURemove = (vehicle) => {
     if (!ru_cart || !ru_cart.length) return;
 
-    const cartProduct = ru_cart.find(item => item.className === vehicle.className);
+    const cartProduct = ru_cart.find(item => item.name === vehicle.name);
     if (cartProduct.quantity < 2) {
-      set_ru_cart([...ru_cart.filter(item => item.className !== cartProduct.className)]);
+      set_ru_cart([...ru_cart.filter(item => item.name !== cartProduct.name)]);
       return;
     }
 
     cartProduct.quantity -= 1;
-    set_ru_cart([...ru_cart.filter(item => item.className !== cartProduct.className), cartProduct]);
+    set_ru_cart([...ru_cart.filter(item => item.name !== cartProduct.name), cartProduct]);
   }
 
   return (
