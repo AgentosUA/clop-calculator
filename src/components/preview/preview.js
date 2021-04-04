@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import styles from './preview.module.css'
 
 const Preview = ({ totalPrice, cart = [], onAdd, onRemove, army }) => {
