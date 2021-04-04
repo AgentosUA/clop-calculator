@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Ящик с минами",
+    "className": null,
+    "weapon": "Взрывчатка, ПТ мины, ПОМЗ",
+    "ammo": "5 взрывчатки, 10 ПТ, 30 ПП",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 10
+  },
+  {
+    "name": "Миномет 2Б14",
+    "className": null,
+    "weapon": "Миномет, HE мины, WP мины",
+    "ammo": "80 HE, 20 WP",
+    "Комментарии": "82 мм миномет",
+    "isCrew": null,
+    "crewCount": null,
+    "price": 7
+  },
+  {
+    "name": "Ящик с КОРД",
+    "className": null,
+    "weapon": "КОРД, ленты",
+    "ammo": "10 лент",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "Ящик с ПЗРК Стрела",
+    "className": null,
+    "weapon": "Стрела-2М",
+    "ammo": "1 выстрел",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 4
+  },
+  {
+    "name": "Ящик с ПЗРК Игла",
+    "className": null,
+    "weapon": "Игла",
+    "ammo": "1 выстрел",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 5
+  },
+  {
+    "name": "Ящик с АГС",
+    "className": null,
+    "weapon": "АГС, улитки",
+    "ammo": "15 улиток",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 7
+  },
+  {
+    "name": "Ящик с ДШК",
+    "className": null,
+    "weapon": "ДШК, ленты",
+    "ammo": "10 лент",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "Ящик с РПГ-29",
+    "className": null,
+    "weapon": "РПГ-29",
+    "ammo": "10 выстрелов",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 5
+  },
+  {
+    "name": "Ящик с СПГ-9",
+    "className": null,
+    "weapon": "СПГ-9",
+    "ammo": "10 HEAT, 10 HE",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "Ящик с ПТУР Фагот",
+    "className": null,
+    "weapon": "Фагот",
+    "ammo": "1 выстрел",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "Ящик с ПТУР Конкурс",
+    "className": null,
+    "weapon": "Конкурс",
+    "ammo": "1 выстрел",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "Ящик с ПТУР Метис",
+    "className": null,
+    "weapon": "Метис",
+    "ammo": "1 выстрел",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 6
+  },
+  {
+    "name": "Ящик с пулеметами",
+    "className": null,
+    "weapon": "ПКМ с оптикой х3",
+    "ammo": null,
+    "Комментарии": "Пулеметы с оптикой",
+    "isCrew": null,
+    "crewCount": null,
+    "price": 4
+  },
+  {
+    "name": "Ящик с КСВК",
+    "className": null,
+    "weapon": "КСВК",
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "Ящик с лазерным целеуказателем",
+    "className": null,
+    "weapon": "SOFLAM",
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 4
+  }
+]

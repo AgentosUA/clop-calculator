@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react'
 import { Preview } from '../../components'
 import { Products } from '../../components/products/products'
 
-import carJSON from '../../data/us/us_car.json';
-import truckJSON from '../../data/us/us_truck.json';
-import lightJSON from '../../data/us/us_light_armor.json';
-import heavyJSON from '../../data/us/us_heavy_armor.json';
-import airJSON from '../../data/us/us_air.json';
-import extraJSON from '../../data/us/us_extra.json';
+import carJSON from '../../data/ru/ru_car.json';
+import truckJSON from '../../data/ru/ru_truck.json';
+import lightJSON from '../../data/ru/ru_light_armor.json';
+import heavyJSON from '../../data/ru/ru_heavy_armor.json';
+import airJSON from '../../data/ru/ru_air.json';
+import extraJSON from '../../data/ru/ru_extra.json';
 
 import { useLocalStorage } from '../../hooks'
-import styles from './us.module.css'
+import styles from './ru.module.css'
 
-const Us = () => {
+const Ru = () => {
   const [searchValue, setSearchValue] = useState('');
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(100);
@@ -25,11 +25,11 @@ const Us = () => {
   const [isExtra, setIsExtra] = useState(true);
 
   const [totalPrice, setTotalPrice] = useState(0);
-  const [us_cart, set_us_cart] = useLocalStorage('us_cart', [])
+  const [ru_cart, set_ru_cart] = useLocalStorage('ru_cart', [])
   
   useEffect(() => {
-    setTotalPrice(us_cart.reduce((count = 0, item) => count + (item.price * item.quantity), 0));
-  }, [us_cart])
+    setTotalPrice(ru_cart.reduce((count = 0, item) => count + (item.price * item.quantity), 0));
+  }, [ru_cart])
 
   const onSearchValueChange = (value) => {
     setSearchValue(value);
@@ -44,37 +44,36 @@ const Us = () => {
   }
 
   const onAdd = (vehicle) => {
-    if (!us_cart || !us_cart.length) {
-      set_us_cart([{ ...vehicle, quantity: 1 }]);
+    if (!ru_cart || !ru_cart.length) {
+      set_ru_cart([{ ...vehicle, quantity: 1 }]);
       return;
     }
 
-    const isExists = us_cart.find(item => {
+    const isExists = ru_cart.find(item => {
       return item.className === vehicle.className
     })
 
     if (isExists) {
       isExists.quantity += 1;
-      set_us_cart([...us_cart.filter(item => item.className !== isExists.className), isExists]);
+      set_ru_cart([...ru_cart.filter(item => item.className !== isExists.className), isExists]);
       return;
     }
 
     vehicle.quantity = 1;
-    set_us_cart([...us_cart, vehicle]);
+    set_ru_cart([...ru_cart, vehicle]);
   }
 
   const onRemove = (vehicle) => {
-    if (!us_cart || !us_cart.length) return;
+    if (!ru_cart || !ru_cart.length) return;
 
-    const cartProduct = us_cart.find(item => item.className === vehicle.className);
+    const cartProduct = ru_cart.find(item => item.className === vehicle.className);
     if (cartProduct.quantity < 2) {
-      set_us_cart([...us_cart.filter(item => item.className !== cartProduct.className)]);
+      set_ru_cart([...ru_cart.filter(item => item.className !== cartProduct.className)]);
       return;
     }
 
     cartProduct.quantity -= 1;
-    set_us_cart([...us_cart.filter(item => item.className !== cartProduct.className), cartProduct]);
-
+    set_ru_cart([...ru_cart.filter(item => item.className !== cartProduct.className), cartProduct]);
   }
 
   const filter = (vehicles) => {
@@ -92,8 +91,8 @@ const Us = () => {
   };
 
   return (
-    <section className={styles.us}>
-      <Preview army='US Army' totalPrice={totalPrice} cart={us_cart} onAdd={onAdd} onRemove={onRemove} />
+    <section className={styles.ru}>
+      <Preview army='ВС РФ' totalPrice={totalPrice} cart={ru_cart} onAdd={onAdd} onRemove={onRemove} />
       <div className={styles.filters}>
         <div className={styles.search}>
           <label htmlFor='search'>Поиск</label><br />
@@ -139,7 +138,7 @@ const Us = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={us_cart}
+        cart={ru_cart}
       />
       <Products
         name='Грузовики'
@@ -149,7 +148,7 @@ const Us = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={us_cart}
+        cart={ru_cart}
       />
       <Products
         name='Легкая техника'
@@ -159,7 +158,7 @@ const Us = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={us_cart}
+        cart={ru_cart}
       />
       <Products
         name='Тяжёлая техника'
@@ -169,7 +168,7 @@ const Us = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={us_cart}
+        cart={ru_cart}
       />
       <Products
         name='Авиация'
@@ -179,7 +178,7 @@ const Us = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={us_cart}
+        cart={ru_cart}
       />
       <Products
         name='Доп. вооружение'
@@ -189,10 +188,10 @@ const Us = () => {
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}
-        cart={us_cart}
+        cart={ru_cart}
       />
     </section>
   )
 }
 
-export { Us };
+export { Ru };

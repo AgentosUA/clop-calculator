@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ГАЗ Тигр",
+    "className": "\"NM_Tigr\"",
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": null
+  },
+  {
+    "name": "УАЗ АГС",
+    "className": "\"UAZ_AGS30_RU\"",
+    "weapon": "АГС",
+    "ammo": "6 улиток",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 7
+  },
+  {
+    "name": "УАЗ ДШКМ",
+    "className": "\"ACE_UAZ_MG_RU\"",
+    "weapon": "ДКШМ",
+    "ammo": "10 лент",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "УАЗ СПГ",
+    "className": "\"tu_spg9_uaz\"",
+    "weapon": "СПГ",
+    "ammo": "4 HEAT, 4 HE",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 6
+  },
+  {
+    "name": "УАЗ",
+    "className": "\"UAZ_RU\"",
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 1
+  },
+  {
+    "name": "ГАЗ 66",
+    "className": "\"rhs_gaz66_msv\"",
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 1
+  }
+]

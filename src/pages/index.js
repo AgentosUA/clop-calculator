@@ -1,6 +1,6 @@
 export * from './home';
-export * from './about';
+export * from './cart';
 export * from './us';
-// export * from './ru';
+export * from './ru';
 
 

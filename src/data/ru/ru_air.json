@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Ка-137",
+    "className": "\"Ka137_PMC\"",
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 1,
+    "price": null
+  },
+  {
+    "name": "Ка-50",
+    "className": "\"TU_Ka50\"",
+    "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
+    "ammo": "30мм: 230HE, 230AP, 40НАР, 12ПТУР",
+    "Комментарии": "Одноместный",
+    "isCrew": null,
+    "crewCount": 1,
+    "price": 30
+  },
+  {
+    "name": "Ка-50 с ammoО",
+    "className": "\"ACE_Ka50\"",
+    "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
+    "ammo": "30мм: 230HE, 230AP, 40НАР, 12ПТУР",
+    "Комментарии": "Одноместный",
+    "isCrew": null,
+    "crewCount": 1,
+    "price": 38
+  },
+  {
+    "name": "Ка-52 с ammoО",
+    "className": "\"TU_KA52_OD_Ataka\"",
+    "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
+    "ammo": "30мм: 230HE, 230AP, 40НАР, 12ПТУР",
+    "Комментарии": "Двухместный",
+    "isCrew": null,
+    "crewCount": null,
+    "price": 40
+  },
+  {
+    "name": "Ми-24ВП",
+    "className": "\"TU_Mi24_VP\"",
+    "weapon": "23мм, 80мм НАР, ПТУР Атака",
+    "ammo": "23мм 460, 80 НАР, 4ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 20
+  },
+  {
+    "name": "Ми-24ВП (ПТ)",
+    "className": "\"TU_Mi24_VP_8AT\"",
+    "weapon": "23мм, 80мм НАР, ПТУР Атака",
+    "ammo": "23мм 460, 80 НАР, 8ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 22
+  },
+  {
+    "name": "Ми-24В",
+    "className": "\"Mi24_V\"",
+    "weapon": "12.7, 80мм НАР, ПТУР Атака",
+    "ammo": "12.7 1470, 80 НАР, 4ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 18
+  },
+  {
+    "name": "Ми-24В (ПТ)",
+    "className": "\"TU_Mi24_V_8AT\"",
+    "weapon": "12,7, 80мм НАР, ПТУР Атака",
+    "ammo": "12.7 1470, 40 НАР, 8ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 21
+  },
+  {
+    "name": "Ми-24В (УПК-23)",
+    "className": "\"ACE_Mi24_V_UPK23_RU\"",
+    "weapon": "12.7, 80мм НАР, УПК, ПТУР Атака",
+    "ammo": "12.7 1470, 40 НАР, УПК 500, 4ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 22
+  },
+  {
+    "name": "Ми-24В (ФАБ-250)",
+    "className": "\"ACE_Mi24_V_FAB250_RU\"",
+    "weapon": "12.7, 80мм НАР, ФАБ-250, ПТУР Атака",
+    "ammo": "12.7 1470, 40 НАР, 2ФАБ, 4ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 22
+  },
+  {
+    "name": "Ми-24Д",
+    "className": "\"tu_mi24D\"",
+    "weapon": "12.7, 57мм НАР, ПТУР Фаланга",
+    "ammo": "12.7 1470, 128 НАР, 4ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 22
+  },
+  {
+    "name": "Ми-24П",
+    "className": "\"Mi24_P\"",
+    "weapon": "ГШ, 80мм НАР, ПТУР Атака",
+    "ammo": "ГШ 750, 80 НАР, 4ПТУР",
+    "Комментарии": "Забагован? Стрелок не двигается",
+    "isCrew": null,
+    "crewCount": 2,
+    "price": null
+  },
+  {
+    "name": "Ми-6Т",
+    "className": "\"ap_mi6t_ru\"",
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 1,
+    "price": 4
+  },
+  {
+    "name": "Ми-8АМТШ (Атака)",
+    "className": "\"TU_Mi8_AMTSh_Ataka_RU\"",
+    "weapon": "80мм НАР, ПТУР Атака, курсовые ПКМы",
+    "ammo": "80 НАР, 4ПТУР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": null
+  },
+  {
+    "name": "Ми-8АМТШ (С-5)",
+    "className": null,
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": null
+  },
+  {
+    "name": "Ми-8АМТ",
+    "className": "\"TU_Mi8_AMT_RU\"",
+    "weapon": "Курсовые ПКМы",
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 5
+  },
+  {
+    "name": "Ми-8МТВ",
+    "className": "\"Mi17_Ins\"",
+    "weapon": "Курсовые ПКМы",
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 5
+  },
+  {
+    "name": "Ми-8МТВ-3",
+    "className": "\"ACE_Mi17_RU\"",
+    "weapon": "Курсовые ПКМы",
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 5
+  },
+  {
+    "name": "Ми-8МТВ-3 (С-5)",
+    "className": "\"TU_Mi8_MTV3_S5_RU\"",
+    "weapon": "57мм НАР, Курсовые ПКМы",
+    "ammo": "128 НАР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 13
+  },
+  {
+    "name": "Ми-8МТВ-3 (С-8)",
+    "className": "\"Mi17_rockets_RU\"",
+    "weapon": "80мм НАР, Курсовые ПКМы",
+    "ammo": "80 НАР",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 13
+  },
+  {
+    "name": "Ми-8МТВ-3 (УПК-23)",
+    "className": "\"TU_Mi8_MTV3_UPK23_RU\"",
+    "weapon": "80мм НАР, УПК-23, Курсовые ПКМы",
+    "ammo": "40 НАР, 500УПК",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": 2,
+    "price": 10
+  }
+]

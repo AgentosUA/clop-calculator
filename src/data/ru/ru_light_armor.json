@@ -1,0 +1,312 @@
+[
+  {
+    "name": "БМ-21 Град",
+    "className": "\"GRAD_RU\"",
+    "weapon": "Град",
+    "ammo": "40 выстрелов",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 27
+  },
+  {
+    "name": "Урал ЗУ-23-2",
+    "className": "\"ACE_Ural_ZU23_RU\"",
+    "weapon": "ЗУ-23-2",
+    "ammo": "6 лент по 100",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 7
+  },
+  {
+    "name": "БМД-1",
+    "className": "\"rhs_bmd1\"",
+    "weapon": "73мм Гром, Малютка, ПКМ",
+    "ammo": "24HEAT, 16HE, 1 птур",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 8
+  },
+  {
+    "name": "БМД-1П",
+    "className": "\"rhs_bmd1p\"",
+    "weapon": "73мм Гром, Конкурс, ПКМ",
+    "ammo": "24HEAT, 16HE, 1 птур",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 9
+  },
+  {
+    "name": "БМД-2",
+    "className": "\"rhs_bmd2\"",
+    "weapon": "30мм, Конкурс",
+    "ammo": "120HE, 180AP, 1 птур",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 13
+  },
+  {
+    "name": "БМП-1",
+    "className": "\"rhs_bmp1_msv\"",
+    "weapon": "73мм Гром, Малютка, ПКМ",
+    "ammo": "24HEAT, 16HE, 1 птур",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 9
+  },
+  {
+    "name": "БМП-1П",
+    "className": "\"rhs_bmp1p_msv\"",
+    "weapon": "73мм Гром, Конкурс, ПКМ",
+    "ammo": "24HEAT, 16HE, 1 птур",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 11
+  },
+  {
+    "name": "БМП-1Д",
+    "className": "\"rhs_bmp1d_msv\"",
+    "weapon": "73мм Гром, Малютка, ПКМ",
+    "ammo": "24HEAT, 16HE, 1 птур",
+    "Комментарии": "Усиленная броня",
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 10
+  },
+  {
+    "name": "БМП-2",
+    "className": "\"rhs_bmp2_msv\"",
+    "weapon": "30мм, Конкурс",
+    "ammo": "340HE, 160AP, 1 птур",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 14
+  },
+  {
+    "name": "БМП-2Д",
+    "className": "\"rhs_bmp2d_msv\"",
+    "weapon": "30мм, Конкурс",
+    "ammo": "340HE, 160AP, 1 птур",
+    "Комментарии": "Усиленная броня",
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 15
+  },
+  {
+    "name": "БМП-3",
+    "className": "\"BMP3\"",
+    "weapon": "100мм, 30мм",
+    "ammo": "40HE, 10 птуров. 30мм: 305HE, 195AP",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 20
+  },
+  {
+    "name": "БРДМ-2",
+    "className": "\"ACE_BRDM2_RU\"",
+    "weapon": "КПВТ, пкм",
+    "ammo": "10 лент КПВТ, 8 лент ПКМ по 250",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 6
+  },
+  {
+    "name": "БРДМ-2 (ПЗРК)",
+    "className": "\"tu_brdm2_SA9\"",
+    "weapon": "Стрела-1М",
+    "ammo": "4 ПЗРК",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 10
+  },
+  {
+    "name": "БРДМ-2 (ПТУР)",
+    "className": "\"ACE_BRDM2_ATGM_RU\"",
+    "weapon": "Конкурс-М",
+    "ammo": "10 9К113М",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 7
+  },
+  {
+    "name": "БТР-РД \"Робот\"",
+    "className": "\"TU_BTRRD\"",
+    "weapon": "Конкурс",
+    "ammo": "1 ПТУР",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 6
+  },
+  {
+    "name": "БТР-40",
+    "className": "\"BTR40_TK_GUE_EP1\"",
+    "weapon": "Без вооружения",
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "БТР-40 ДШКМ",
+    "className": "\"BTR40_MG_TK_GUE_EP1\"",
+    "weapon": "ДШКМ",
+    "ammo": "10 лент по 50",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "БТР-40 ЗУ-23-2",
+    "className": "\"ap_btr40_zu23\"",
+    "weapon": "ЗУ-23-2",
+    "ammo": "6 лент по 100",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 8
+  },
+  {
+    "name": "БТР-40 ДШКМх2",
+    "className": "\"ap_btr40_2dshk\"",
+    "weapon": "ДШКМ спаренный",
+    "ammo": "10 лент по 100",
+    "Комментарии": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "БТР-60",
+    "className": "\"tu_btr60_gr\"",
+    "weapon": "КПВТ, пкм",
+    "ammo": "10 лент по 50",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 6
+  },
+  {
+    "name": "БТР-70",
+    "className": "\"ACE_BTR70_RU\"",
+    "weapon": "КПВТ, пкм",
+    "ammo": "10 лент по 50",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 7
+  },
+  {
+    "name": "БТР-80",
+    "className": "\"AP_BTR80\"",
+    "weapon": "КПВТ, пкм",
+    "ammo": "10 лент по 50",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 8
+  },
+  {
+    "name": "БТР-80А",
+    "className": "\"AP_BTR82A\"",
+    "weapon": "30мм, пкмт",
+    "ammo": "170HE, 130AP, 250х7",
+    "Комментарии": "Без теплака",
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 12
+  },
+  {
+    "name": "9K33 \"Оса\"",
+    "className": "\"pzn_OSA\"",
+    "weapon": "9К33 ПЗРК",
+    "ammo": "6 пусков",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 100
+  },
+  {
+    "name": "БТР-82А",
+    "className": "\"AP_BTR82A\"",
+    "weapon": "30мм, пкмт",
+    "ammo": "170HE, 130AP, 250х7",
+    "Комментарии": "С теплаком",
+    "isCrew": "Х",
+    "crewCount": 2,
+    "price": 16
+  },
+  {
+    "name": "БТР-Д",
+    "className": "\"TU_BTRD\"",
+    "weapon": "2 ПКМ курсовые",
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 1,
+    "price": 2
+  },
+  {
+    "name": "БТР-ЗД \"Скрежет\"",
+    "className": "\"TU_BTRZD\"",
+    "weapon": "ЗУ-23-2",
+    "ammo": "10 лент по 40",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 7
+  },
+  {
+    "name": "МТ-ЛБВМ",
+    "className": "\"TU_MTLBVM\"",
+    "weapon": "НСВТ",
+    "ammo": "5 лент по 150",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 4
+  },
+  {
+    "name": "МТ-ЛБВМ ЗУ-23-2",
+    "className": "\"TU_MTLBV_ZU23\"",
+    "weapon": "ЗУ-23-2",
+    "ammo": "6 лент по 100",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 8
+  },
+  {
+    "name": "МТ-ЛБВМ \"мед.\"",
+    "className": "\"TU_MTLBV_MED\"",
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": "Возможность лечиться до почти фулл хп",
+    "isCrew": null,
+    "crewCount": null,
+    "price": 5
+  },
+  {
+    "name": "МТ-ЛБ Стрела-10",
+    "className": "\"pzn_mtlb_sa13_base\"",
+    "weapon": "Стрела-10",
+    "ammo": "8 ракет",
+    "Комментарии": null,
+    "isCrew": "X",
+    "crewCount": 2,
+    "price": 16
+  }
+]
