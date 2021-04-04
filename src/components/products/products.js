@@ -3,9 +3,7 @@ import { Card } from '../../components'
 
 import styles from './products.module.css'
 
-const Products = ({name, isVisible, cart, products, filter, onAdd, onRemove, totalPrice}) => {
-
-
+const Products = ({ name, isVisible, cart, products, filter, onAdd, onRemove, totalPrice, army, type,  }) => {
   return (
     <Fragment>
       {isVisible && filter(products).length > 0 && <h3>{name}</h3>}
@@ -14,7 +12,12 @@ const Products = ({name, isVisible, cart, products, filter, onAdd, onRemove, tot
           return (
             <Card
               key={vehicle.name}
-              img={vehicle.img || `https://db.armaproject.ru/images/vehicles/${vehicle.className.toLowerCase().replace("\"", '').replace("\"", '')}.png`}
+              img={
+                vehicle.img || 
+                vehicle.className
+                ? `https://db.armaproject.ru/images/vehicles/${vehicle.className.toLowerCase().replace("\"", '').replace("\"", '')}.jpg`
+                : `https://db.armaproject.ru/images/items/${vehicle.name.replace("\"", '').replace("\"", '').replace(' ', '%20').replace(' ', '%20')}.jpg`
+              }
               name={vehicle.name}
               className={vehicle.className}
               price={vehicle.price}

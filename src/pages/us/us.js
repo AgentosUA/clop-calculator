@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Card, Preview } from '../../components'
+import { Preview } from '../../components'
 import { Products } from '../../components/products/products'
 
 import carJSON from '../../data/us/us_car.json';
@@ -7,6 +7,7 @@ import truckJSON from '../../data/us/us_truck.json';
 import lightJSON from '../../data/us/us_light_armor.json';
 import heavyJSON from '../../data/us/us_heavy_armor.json';
 import airJSON from '../../data/us/us_air.json';
+import extraJSON from '../../data/us/us_extra.json';
 
 import { useLocalStorage } from '../../hooks'
 import styles from './us.module.css'
@@ -21,6 +22,7 @@ const Us = () => {
   const [isLightVehicle, setIsLightVehicle] = useState(true);
   const [isHeavyVehicle, setIsHeavyVehicle] = useState(true);
   const [isAirVehicle, setIsAirVehicle] = useState(true);
+  const [isExtra, setIsExtra] = useState(true);
 
   const [totalPrice, setTotalPrice] = useState(0);
   const [us_cart, set_us_cart] = useLocalStorage('us_cart', [])
@@ -122,7 +124,10 @@ const Us = () => {
           
 
           <input type='checkbox' checked={isAirVehicle} value={isAirVehicle} onChange={(e) => setIsAirVehicle(!isAirVehicle)} />
-          <label htmlFor='isLightVehicle'>Авиация</label>
+          <label htmlFor='isLightVehicle'>Авиация</label><br />
+
+          <input type='checkbox' checked={isExtra} value={isExtra} onChange={(e) => setIsExtra(!isExtra)} />
+          <label htmlFor='isExtra'>Доп. вооружение</label>
           
         </div>
       </div>
@@ -171,6 +176,16 @@ const Us = () => {
         filter={filter}
         isVisible={isAirVehicle}
         products={airJSON}
+        totalPrice={totalPrice}
+        onAdd={onAdd}
+        onRemove={onRemove}
+        cart={us_cart}
+      />
+      <Products
+        name='Доп. вооружение'
+        filter={filter}
+        isVisible={isExtra}
+        products={extraJSON}
         totalPrice={totalPrice}
         onAdd={onAdd}
         onRemove={onRemove}

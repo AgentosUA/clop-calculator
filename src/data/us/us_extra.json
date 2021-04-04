@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Ящик с минами",
+    "className": null,
+    "weapon": "Взрывчатка, ПТ мины, Клейморы",
+    "ammo": "5 взрывчатки, 10 ПТ, 30 ПП",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 10
+  },
+  {
+    "name": "Миномет M224",
+    "className": null,
+    "weapon": "Миномет, HE мины, WP мины",
+    "ammo": "250 HE, 50 WP",
+    "comment": "60 мм миномет",
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 6
+  },
+  {
+    "name": "Миномет М252",
+    "className": null,
+    "weapon": "Миномет, HE мины, WP мины",
+    "ammo": "80 HE, 20 WP",
+    "comment": "81 мм миномет",
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 7
+  },
+  {
+    "name": "Ящик с TOW",
+    "className": null,
+    "weapon": "TOW, снаряды",
+    "ammo": "1 выстрел",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 5
+  },
+  {
+    "name": "Ящик с ПЗРК",
+    "className": null,
+    "weapon": "Stinger",
+    "ammo": "1 выстрел",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 5
+  },
+  {
+    "name": "Ящик с MK19",
+    "className": null,
+    "weapon": "Mk19, улитки",
+    "ammo": "10 улиток",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 6
+  },
+  {
+    "name": "Ящик с М2",
+    "className": null,
+    "weapon": "M2, ленты",
+    "ammo": "10 лент",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "Ящик с Javelin",
+    "className": null,
+    "weapon": "Javelin",
+    "ammo": "1 выстрел",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 7
+  },
+  {
+    "name": "Ящик с M107",
+    "className": null,
+    "weapon": "M107",
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "Ящик с TAC-50SD",
+    "className": null,
+    "weapon": "TAC-50SD",
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 3
+  },
+  {
+    "name": "Ящик с пулеметами",
+    "className": null,
+    "weapon": "M240 M145 x3",
+    "ammo": null,
+    "comment": "Пулеметы с оптикой",
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 4
+  },
+  {
+    "name": "Ящик с лазерным целеуказателем",
+    "className": null,
+    "weapon": "SOFLAM",
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 4
+  },
+  {
+    "name": "Ящик с MAAWS",
+    "className": null,
+    "weapon": "MAAWS",
+    "ammo": "10 выстрелов",
+    "comment": null,
+    "img": null,
+    "isCrew": null,
+    "crewCount": null,
+    "price": 5
+  }
+]

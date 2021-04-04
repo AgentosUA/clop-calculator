@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from './preview.module.css'
 
 const Preview = ({ totalPrice, usCart = [], onAdd, onRemove }) => {
