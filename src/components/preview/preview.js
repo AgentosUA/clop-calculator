@@ -20,7 +20,7 @@ const Preview = ({ totalPrice, cart = [], onAdd, onRemove, army }) => {
             return (
               <li key={item.name}>
                 <div>
-                  {item.quantity}x {item.name}
+                  {item.quantity}x {item.name} ({item.quantity * item.price} очков)
                 </div>
                 <div>
                   <button className={styles.add} onClick={() => item.price + totalPrice > 100 ? null : onAdd(item)} disabled={item.price + totalPrice > 100}>+</button>

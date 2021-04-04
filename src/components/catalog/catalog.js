@@ -5,7 +5,7 @@ import { Products } from '../../components/products/products'
 import { useLocalStorage } from '../../hooks'
 import styles from './catalog.module.css'
 
-const Catalog = ({carJSON, truckJSON, lightJSON, heavyJSON, airJSON, extraJSON, cartName}) => {
+const Catalog = ({carJSON, truckJSON, lightJSON, heavyJSON, airJSON, extraJSON, cartName, army}) => {
   const [searchValue, setSearchValue] = useState('');
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(100);
@@ -86,7 +86,7 @@ const Catalog = ({carJSON, truckJSON, lightJSON, heavyJSON, airJSON, extraJSON, 
 
   return (
     <section className={styles.us}>
-      <Preview army='US Army' totalPrice={totalPrice} cart={cart} onAdd={onAdd} onRemove={onRemove} />
+      <Preview army={army} totalPrice={totalPrice} cart={cart} onAdd={onAdd} onRemove={onRemove} />
       <div className={styles.filters}>
         <div className={styles.search}>
           <label htmlFor='search'>Поиск</label><br />

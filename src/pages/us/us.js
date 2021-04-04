@@ -10,8 +10,17 @@ import extraJSON from '../../data/us/us_extra.json';
 
 const Us = () => {
   return (
-    <Catalog cartName='us_cart' carJSON={carJSON} truckJSON={truckJSON} lightJSON={lightJSON} heavyJSON={heavyJSON} airJSON={airJSON} extraJSON={extraJSON} />
-  )  
+    <Catalog
+      cartName='us_cart'
+      carJSON={carJSON}
+      truckJSON={truckJSON}
+      lightJSON={lightJSON}
+      heavyJSON={heavyJSON}
+      airJSON={airJSON}
+      extraJSON={extraJSON}
+      army='US Army'
+    />
+  )
 }
 
 export { Us };
