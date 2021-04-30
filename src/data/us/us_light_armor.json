@@ -33,6 +33,17 @@
     "price": 18
   },
   {
+  "name":"LAV25A3",
+  "className":"\"LAV25A3_ITSS\"",
+  "weapon": "25mm, M240",
+  "ammo": "210HE, 210AP, M240 4  ленты по 400",
+  "comment": "С теплаком СУО",
+  "img": null,
+  "isCrew": "X",
+  "crewCount": 3,
+  "price": 20
+  },
+  {
     "name": "LAV-AT",
     "className": "\"pzn_lav_at\"",
     "weapon": "TOW",
@@ -41,8 +52,63 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 20
+    "price": 12
   },
+  {
+    "name": "M1126 Stryker ICV (M2)",
+    "className": "\"M1126_ICV_M2_EP1\"",
+    "weapon": "M2",
+    "ammo": "M2 10x100",
+    "comment": null,
+    "img": null,
+    "isCrew": "X",
+    "crewCount":2,
+    "price": 13
+  },
+  {
+    "name": "M1126 Stryker ICV (M2) SLAT",
+    "className": "\"M1126_ICV_M2_SLAT\"",
+    "weapon": "M2",
+    "ammo": "M2 10x100",
+    "comment": "С доп.экранами",
+    "img": null,
+    "isCrew": "X",
+    "crewCount":2,
+    "price":15
+  },
+  {
+  "name": "M1126 Stryker ICV (Mk.19)",
+  "className": "\"ACE_Stryker_ICV_MK19\"",
+  "weapon": "Mk19",
+  "ammo": "Mk19 10x48",
+  "comment": null,
+  "img": null,
+  "isCrew": "X",
+  "crewCount": 2,
+  "price": 13
+  },
+  {
+"name": "M1126 Stryker ICV (Mk.19) SLAT",
+"className": "\"ACE_Stryker_ICV_MK19_SLAT\"",
+"weapon": "Mk19",
+"ammo": "MK19 10x48",
+"comment": "С доп.экранами",
+"img": null,
+"isCrew": "X",
+"crewCount": 2,
+"price": 15
+  },
+  {
+"name": "M1126 Stryker MEV",
+"classname": "\"M1133_MEV_EP1\"",
+"weapon": "null",
+"ammo": "null",
+"comment": "Возможность хилиться на почти фуллхп",
+"img": null,
+"isCrew": "X",
+"crewCount": 3,
+"price": 3
+},
   {
     "name": "M1117",
     "className": "\"AP_M1117_W\"",
@@ -63,7 +129,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 5
+    "price": 4
   },
   {
     "name": "M113 M2 M60",
@@ -74,7 +140,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 6
+    "price": 5
   },
   {
     "name": "M113 FSV",
@@ -85,7 +151,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 10
+    "price": 9
   },
   {
     "name": "M113 MedEvac",
@@ -96,7 +162,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 5
+    "price": 3
   },
   {
     "name": "M113 Mk19",

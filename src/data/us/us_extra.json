@@ -8,7 +8,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 10
+    "price": 5
   },
   {
     "name": "Миномет M224",
@@ -63,13 +63,24 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 6
+    "price": 7
   },
   {
     "name": "Ящик с М2",
     "className": null,
     "weapon": "M2, ленты",
     "ammo": "10 лент",
+    "comment": null,
+    "img": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 1
+  },
+  {
+    "name": "Ящик с Dragon",
+    "className": null,
+    "weapon": "M47 Dragon",
+    "ammo": "1 выстрел",
     "comment": null,
     "img": null,
     "isCrew": false,
@@ -85,7 +96,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 7
+    "price": 9
   },
   {
     "name": "Ящик с M107",

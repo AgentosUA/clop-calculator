@@ -7,7 +7,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 10
+    "price": 5
   },
   {
     "name": "Миномет 2Б14",
@@ -27,7 +27,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 3
+    "price": 1
   },
   {
     "name": "Ящик с ПЗРК Стрела",
@@ -67,7 +67,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 2
+    "price": 1
   },
   {
     "name": "Ящик с РПГ-29",
@@ -107,7 +107,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 3
+    "price": 4
   },
   {
     "name": "Ящик с ПТУР Метис",
@@ -117,7 +117,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 6
+    "price": 8
   },
   {
     "name": "Ящик с пулеметами (ПКМ)",
@@ -147,6 +147,6 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 4
+    "price": 2
   }
 ]

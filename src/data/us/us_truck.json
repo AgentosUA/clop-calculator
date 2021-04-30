@@ -77,6 +77,17 @@
     "price": 10
   },
   {
+    "name": "M923A2 (С боеприпасами)",
+    "className": "\"ACE_Truck5tReammo\"",
+    "weapon": null,
+    "ammo": null,
+    "comment": null,
+    "img": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 20
+  },
+  {
     "name": "M923A2 (М2)",
     "className": "\"ACE_Truck5tMG\"",
     "weapon": "M2",

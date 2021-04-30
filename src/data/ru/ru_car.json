@@ -1,4 +1,24 @@
 [
+{
+    "name": "ГАЗ Тигр",
+    "className": "\"NM_Tigr\"",
+    "weapon": null,
+    "ammo": null,
+    "Комментарии": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 2
+},
+{
+    "name": "ГАЗ-2330 Тигр камуфляж. (Агс30)",
+    "className": "\"NM_Tigr_ags30_Base\"",
+    "weapon": "АГС",
+    "ammo": "6 улиток",
+    "Комментарий": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 7
+},
   {
     "name": "УАЗ АГС",
     "className": "\"UAZ_AGS30_RU\"",
@@ -38,6 +58,16 @@
     "isCrew": false,
     "crewCount": null,
     "price": 1
+  },
+  {
+      "name": "ГАЗ-39371 Водник(санитарно-эвакуационный)",
+      "className": "\"GAZ_Vodnik_MedEvac_TK\"",
+      "weapon": null,
+      "ammo": null,
+      "Комментарий": "Возможность лечиться до почти фулл хп ",
+      "isCrew": "X",
+      "crewCount": null,
+      "price":"3"
   },
   {
     "name": "ГАЗ 66",

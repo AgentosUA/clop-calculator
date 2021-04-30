@@ -7,7 +7,7 @@
     "Комментарии": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 27
+    "price": 20
   },
   {
     "name": "Урал ЗУ-23-2",
@@ -17,7 +17,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 7
+    "price": 6
   },
   {
     "name": "БМД-1",
@@ -47,7 +47,17 @@
     "Комментарии": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 13
+    "price": 11
+  },
+  {
+      "name": "БМД-2М",
+      "classname": "\"rhs_bmd2m\"",
+      "weapon": "30мм,Конкурс",
+      "ammo": "120HE, 180AP, 2 птур",
+      "Комментарий": null,
+      "isCrew": "X",
+      "crewCount": 2,
+      "price": 18
   },
   {
     "name": "БМП-1",
@@ -57,7 +67,7 @@
     "Комментарии": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 9
+    "price": 8
   },
   {
     "name": "БМП-1П",
@@ -67,7 +77,7 @@
     "Комментарии": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 11
+    "price": 10
   },
   {
     "name": "БМП-1Д",
@@ -77,7 +87,7 @@
     "Комментарии": "Усиленная броня",
     "isCrew": "X",
     "crewCount": 2,
-    "price": 10
+    "price": 9
   },
   {
     "name": "БМП-2",
@@ -87,7 +97,7 @@
     "Комментарии": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 14
+    "price": 13
   },
   {
     "name": "БМП-2Д",
@@ -97,7 +107,27 @@
     "Комментарии": "Усиленная броня",
     "isCrew": "X",
     "crewCount": 2,
-    "price": 15
+    "price": 14
+  },
+  {
+      "name": "БМП-2М",
+      "classname": "\"TU_BMP2M\"",
+      "weapon": "30мм, Конкурс, Агс",
+      "ammo": "340HE, 160AP, 4 птур, 116 Агс ",
+      "Комментарий": "Теплак",
+      "isCrew": "X",
+      "crewCount": 2,
+      "price":22
+  },
+  {
+      "name": "БМП-3 (Бахча)",
+      "classname": "\"TU_BMP3_BAKHCHA\"",
+      "weapon": "100мм, 30мм",
+      "ammo": "340HE, 4 птуров. 30мм: 305HE, 195AP",
+      "Комментарий": "Теплак",
+      "isCrew": "X",
+      "crewCount": 2,
+      "price": 27
   },
   {
     "name": "БМП-3",
@@ -127,7 +157,7 @@
     "Комментарии": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 10
+    "price": 8
   },
   {
     "name": "БРДМ-2 (ПТУР)",
@@ -157,7 +187,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 2
+    "price": 1
   },
   {
     "name": "БТР-40 ДШКМ",
@@ -177,7 +207,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 8
+    "price": 6
   },
   {
     "name": "БТР-40 ДШКМх2",
@@ -285,9 +315,19 @@
     "weapon": null,
     "ammo": null,
     "Комментарии": "Возможность лечиться до почти фулл хп",
-    "isCrew": false,
-    "crewCount": null,
-    "price": 5
+    "isCrew": "X",
+    "crewCount": 3,
+    "price": 3
+  },
+  {
+      "name": "БМП-2 мед.",
+      "className": "\"tu_bmp_amb\"",
+      "weapon": null,
+      "ammo": null,
+      "Комментарий": "Возможность лечиться до почти фулл хп",
+      "isCrew": "X",
+      "crewCount": 3,
+      "price":3
   },
   {
     "name": "МТ-ЛБ Стрела-10",

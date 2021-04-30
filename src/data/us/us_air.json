@@ -8,7 +8,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 23
+    "price": 22
   },
   {
     "name": "AH-1W (4xBGM-71)",
@@ -19,7 +19,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 21
+    "price": 25
   },
   {
     "name": "AH-1W (8xBGM-71)",
@@ -30,7 +30,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 23
+    "price": 28
   },
   {
     "name": "AH-1W (AGM-114/FFAR)",
@@ -41,7 +41,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 30
+    "price": 32
   },
   {
     "name": "AH-64A",
@@ -52,7 +52,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 30
+    "price": 32
   },
   {
     "name": "AH-64A w OD",
@@ -62,17 +62,6 @@
     "comment": "С оповещением",
     "img": null,
     "isCrew": "X",
-    "crewCount": 2,
-    "price": 38
-  },
-  {
-    "name": "AH-64D w OD",
-    "className": "\"TU_AH64D_OD\"",
-    "weapon": "70mm НАРы, 30мм пушка, HF",
-    "ammo": "38 НАР, 1500 пушки, 8 HF",
-    "comment": "С оповещением",
-    "img": null,
-    "isCrew": "Х",
     "crewCount": 2,
     "price": 40
   },
@@ -140,7 +129,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 5
+    "price": 6
   },
   {
     "name": "MH60L",
@@ -173,7 +162,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 4
+    "price": 2
   },
   {
     "name": "UH-1D Transport",
@@ -184,7 +173,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 4
+    "price": 2
   },
   {
     "name": "UH-60L BlackHawk",
@@ -195,7 +184,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 5
+    "price": 3
   },
   {
     "name": "UH-60L BlackHawk (2xFFAR)",
@@ -239,7 +228,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 22
+    "price": 20
   },
   {
     "name": "UH-60L BlackHawk (4xFFAR)",
@@ -250,7 +239,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 1,
-    "price": 13
+    "price": 10
   },
   {
     "name": "UH-60L BlackHawk (4xFFAR/FLIR)",
@@ -261,7 +250,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 17
+    "price": 18
   },
   {
     "name": "UH-60L BlackHawk (8xAGM-114)",
@@ -283,7 +272,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 2,
-    "price": 25
+    "price": 26
   },
   {
     "name": "UH-60L BlackHawk (ESSS wings)",
@@ -294,7 +283,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 1,
-    "price": 4
+    "price": 2
   },
   {
     "name": "UH-60L BlackHawk (ESSS wings/FLIR)",
@@ -316,7 +305,7 @@
     "img": null,
     "isCrew": "X",
     "crewCount": 1,
-    "price": 6
+    "price": 4
   },
   {
     "name": "UH-60L Medevac + FLIR",

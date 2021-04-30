@@ -20,16 +20,6 @@
     "price": 38
   },
   {
-    "name": "Ка-52 с БКО",
-    "className": "\"TU_KA52_OD_Ataka\"",
-    "weapon": "30мм, 80мм НАР, ПТУР Вихрь-М",
-    "ammo": "30мм: 230HE, 230AP, 40НАР, 12ПТУР",
-    "Комментарии": "Двухместный",
-    "isCrew": false,
-    "crewCount": null,
-    "price": 40
-  },
-  {
     "name": "Ми-24ВП",
     "className": "\"TU_Mi24_VP\"",
     "weapon": "23мм, 80мм НАР, ПТУР Атака",
@@ -37,7 +27,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 20
+    "price": 24
   },
   {
     "name": "Ми-24ВП (ПТ)",
@@ -47,7 +37,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 22
+    "price": 26
   },
   {
     "name": "Ми-24В",
@@ -57,7 +47,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 18
+    "price": 23
   },
   {
     "name": "Ми-24В (ПТ)",
@@ -67,7 +57,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 21
+    "price": 25
   },
   {
     "name": "Ми-24В (УПК-23)",
@@ -77,7 +67,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 22
+    "price": 26
   },
   {
     "name": "Ми-24В (ФАБ-250)",
@@ -87,7 +77,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 22
+    "price": 26
   },
   {
     "name": "Ми-24Д",
@@ -107,7 +97,17 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 1,
-    "price": 4
+    "price": 6
+  },
+  {
+      "name": "Ми-8МТВМ (медицинский)",
+      "className": "\"TU_MI8_MTVM_RU_ND\"",
+      "weapon": null,
+      "ammo": null,
+      "Комментарий": "Возможность лечиться до почти фулл хп",
+      "isCrew": "X",
+      "crewCount":3,
+      "price": 4
   },
   {
     "name": "Ми-8АМТ",
@@ -117,7 +117,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 5
+    "price": 2
   },
   {
     "name": "Ми-8МТВ",
@@ -127,7 +127,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 5
+    "price": 2
   },
   {
     "name": "Ми-8МТВ-3",
@@ -137,7 +137,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 5
+    "price": 2
   },
   {
     "name": "Ми-8МТВ-3 (С-5)",
@@ -147,7 +147,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 13
+    "price": 7
   },
   {
     "name": "Ми-8МТВ-3 (С-8)",
@@ -157,7 +157,7 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 13
+    "price": 10
   },
   {
     "name": "Ми-8МТВ-3 (УПК-23)",
@@ -167,6 +167,6 @@
     "Комментарии": null,
     "isCrew": false,
     "crewCount": 2,
-    "price": 10
+    "price": 9
   }
 ]

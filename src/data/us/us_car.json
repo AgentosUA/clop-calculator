@@ -63,7 +63,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 6
+    "price": 7
   },
   {
     "name": "HMMWV ASK (M2)",
@@ -96,7 +96,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 7
+    "price": 8
   },
   {
     "name": "HMMWV Avenger",
@@ -118,7 +118,7 @@
     "img": null,
     "isCrew": false,
     "crewCount": null,
-    "price": 5
+    "price": 2
   },
   {
     "name": "HMMWV Troop Carrier",

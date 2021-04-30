@@ -21,6 +21,28 @@
   "price": 12
 },
 {
+"name": "M1128 Stryker MGS",
+"className": "\"ACE_Stryker_MGS\"",
+"weapon": "105mm",
+"ammo": "9AP,9HEAT",
+"comment": null,
+"img": null,
+"isCrew": "X",
+"crewCount": 2,
+"price": 20
+},
+{
+"name": "M1128 Stryker MGS SLAT",
+"className": "\"ACE_Stryker_MGS_Slat",
+"weapon": "105mm",
+"ammo": "9AP,9HEAT",
+"comment": "С доп.экранами",
+"img": null,
+"isCrew": "X",
+"crewCount": 2,
+"price": 22
+},
+{
   "name": "M1A1 Abrams",
   "className": "\"ACE_M1A1_NATO\"",
   "weapon": "120mm, M240x2, M2",
@@ -30,6 +52,28 @@
   "isCrew": "X",
   "crewCount": 4,
   "price": 40
+},
+{ 
+"name": "M1A2 Abrams TUSK",
+"className": "\"M1A2_TUSK_MG",
+"weapon": "120mm, M240x2, M2",
+"ammo": "25AP, 15HEAT",
+"comment": "1 M240 на заряжающем, M2 на командире",
+"img": null,
+"isCrew": "X",
+"crewCount": 4,
+"price":45
+},
+{ 
+"name":"M1A1 Tusk CSAMM Abrams",
+"className": "\"ACE_M1A1HA_TUSK_CSAMM",
+"weapon": "120mm, M2x2, M240",
+"ammo": "25AP, 15HEAT",
+"comment": "1 M240 на заряжающем, M2 на командире",
+"img": null,
+"isCrew": "X",
+"crewCount": 4,
+"price":50
 },
 {
   "name": "M2A2 Bradley",
