@@ -22,6 +22,28 @@
     "price": 7
   },
   {
+    "name": "Внедорожник SUV",
+    "className": "\"SUV_TK_EP1\"",
+    "weapon": "-",
+    "ammo": "-",
+    "comment": null,
+    "img": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 2
+  },
+  {
+    "name": "Внедорожник SUV (М134)",
+    "className": "\"ArmoredSUV_PMC\"",
+    "weapon": "М134",
+    "ammo": "2000 патронов",
+    "comment": "миниган",
+    "img": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 4
+  },
+  {
     "name": "HMMWV",
     "className": "\"TU_HMMWV\"",
     "weapon": "-",
@@ -53,6 +75,28 @@
     "isCrew": false,
     "crewCount": null,
     "price": 7
+  },
+  {
+    "name": "HMMWV (М134)",
+    "className": "\"HMMWV_M134_Armored\"",
+    "weapon": "М134",
+    "ammo": "2000 патронов",
+    "comment": "Миниган + сетки на окнах",
+    "img": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 4
+  },
+  {
+    "name": "HMMWV (М240)",
+    "className": "\"HMMWV_Armored\"",
+    "weapon": "М240",
+    "ammo": "500 патронов",
+    "comment": "M240 + сетки на окнах",
+    "img": null,
+    "isCrew": false,
+    "crewCount": null,
+    "price": 2
   },
   {
     "name": "HMMWV (TOW)",

@@ -169,16 +169,17 @@
     "crewCount": 3,
     "price": 22
   },
-  "name": "Т-72Б3 (1987)",
-  "classname": "\"ACE_T72B3_RU\"",
-  "weapon": "125мм 2А46-2",
-  "ammo": "10AP, 8HEAT, 6HE, 4 9М119 (Рефлекс)",
-  "Комментарии":"ДЗ",
-  "isCrew": "X",
-  "crewCount": 3,
-   "price": 35
-   },
-   {
+  {
+    "name": "Т-72Б3 (1987)",
+    "classname": "\"ACE_T72B3_RU\"",
+    "weapon": "125мм 2А46-2",
+    "ammo": "10AP, 8HEAT, 6HE, 4 9М119 (Рефлекс)",
+    "Комментарии": "ДЗ",
+    "isCrew": "X",
+    "crewCount": 3,
+    "price": 35
+  },
+  {
     "name": "Т-80Б",
     "className": "\"tsg_t80b\"",
     "weapon": "125мм 2А46-2",
