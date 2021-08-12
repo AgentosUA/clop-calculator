@@ -86,44 +86,7 @@ const Catalog = ({carJSON, truckJSON, lightJSON, heavyJSON, airJSON, extraJSON, 
 
   return (
     <section className={styles.us}>
-      <Preview army={army} totalPrice={totalPrice} cart={cart} onAdd={onAdd} onRemove={onRemove} />
-      <div className={styles.filters}>
-        <div className={styles.search}>
-          <label htmlFor='search'>Поиск</label><br />
-          <input name='search' type='text' placeholder='Поиск по названию' value={searchValue} onChange={(e) => onSearchValueChange(e.target.value)} />
-        </div>
-        <div className={styles.parameters}>
-          <div>
-            <label htmlFor='search'>Мин цена</label><br />
-            <input type='number' min='0' max='100' step='1' value={minPrice} onChange={(e) => onMinPriceChange(e.target.value)} />
-          </div>
-          <div>
-            <label htmlFor='search'>Макс цена</label><br />
-            <input type='number' min='0' max='100' step='1' value={maxPrice} onChange={(e) => onMaxPriceChange(e.target.value)} />
-          </div>
-        </div>
-        <div className={styles.unitsType}>
-        <input type='checkbox' checked={isCar} value={isCar} onChange={(e) => setisCar(!isCar)} />
-          <label htmlFor='isLightVehicle'>Автомобили</label><br />
-          
-          <input type='checkbox' checked={isTruckVehicle} value={isTruckVehicle} onChange={(e) => setIsTruckVehicle(!isTruckVehicle)} />
-          <label htmlFor='isTruckVehicle'>Грузовики</label><br />
-
-          <input type='checkbox' checked={isLightVehicle} value={isLightVehicle} onChange={(e) => setIsLightVehicle(!isLightVehicle)} />
-          <label htmlFor='isLightVehicle'>Легкая техника</label><br />
-
-          <input type='checkbox' checked={isHeavyVehicle} value={isHeavyVehicle} onChange={(e) => setIsHeavyVehicle(!isHeavyVehicle)} />
-          <label htmlFor='isHeavyVehicle'>Тяжёлая техника</label><br />
-          
-
-          <input type='checkbox' checked={isAirVehicle} value={isAirVehicle} onChange={(e) => setIsAirVehicle(!isAirVehicle)} />
-          <label htmlFor='isLightVehicle'>Авиация</label><br />
-
-          <input type='checkbox' checked={isExtra} value={isExtra} onChange={(e) => setIsExtra(!isExtra)} />
-          <label htmlFor='isExtra'>Доп. вооружение</label>
-          
-        </div>
-      </div>
+      {/*<Preview army={army} totalPrice={totalPrice} cart={cart} onAdd={onAdd} onRemove={onRemove} />*/}
       <Products
         name='Автомобили'
         filter={filter}

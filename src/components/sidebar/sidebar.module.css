@@ -1,19 +1,22 @@
 .sidebarWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 20%;
-  min-width: 250px;
+  height: 100vh;
+  min-width: 100px;
   position: relative;
 }
 
-.cartWrapper {
+.sidebarContainer {
   position: fixed;
   left: 25px;
-  top: 150;
+  top: 150px;
+  right: auto;
+  bottom: 0;
+  max-height: 500px;
 }
-.filterWrapper {
-  position: fixed;
-  left: 25px;
-  top: 400px;
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

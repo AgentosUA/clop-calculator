@@ -1,0 +1,43 @@
+.filters {
+  margin: 15px auto;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 280px;
+  width: 100%;
+  background: #292929;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0px 0 4px rgba(0, 0, 0, 0.25);
+  color: #fff;  
+}
+
+.filters input[type=number],
+.filters input[type=text] {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.search {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.price {
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.unitsType {
+  margin-top: 10px;
+}

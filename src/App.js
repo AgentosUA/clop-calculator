@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { Home, Us, Ru, Cart } from './pages';
 import { Header, Footer, Navigation, Sidebar } from './components'
-import { setUnits } from './store/catalog';
+import { setUnits, setCategories } from './store/catalog';
 import { Fragment } from 'react';
 function App() {
   const dispatch = useDispatch();
@@ -12,14 +12,14 @@ function App() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const { data } = await axios.get('http://localhost:2000/units');
-      dispatch(setUnits(data));
+      const { data: units } = await axios.get('http://localhost:2000/units');
+      const { data: categories } = await axios.get('http://localhost:2000/categories');
+      dispatch(setUnits(units));
+      dispatch(setCategories(categories));
     }
 
     fetchProducts();
   });
-
-
 
   return (
     <Fragment>

@@ -24,7 +24,6 @@ const Card = (
         <div className={styles.controls}>
           <button className={styles.add} disabled={addDisabled} onClick={onAdd}>Добавить</button>
           <button className={styles.remove} disabled={removeDisabled} onClick={onRemove}>Удалить</button>
-          <button className={styles.top} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>К закупу</button>
         </div>
       </div>
       <div className={styles.description}>

@@ -6,7 +6,7 @@
   max-width: 500px;
   min-height: 300px;
   width: 100%;
-  background: #fff;
+  background: #292929;
   overflow: hidden;
   border-radius: 25px;
   box-shadow: 0px 0 4px rgba(0, 0, 0, 0.25);
@@ -24,6 +24,8 @@
 
 .price {
   font-size: 20px;
+  color: #fff;
+  font-weight: 100;
 }
 
 .interface img {
@@ -42,6 +44,7 @@
 .description h3, .description span {
   text-align: center;
   display: block;
+  color: #ffbb00;
 }
 
 .description div {
@@ -50,11 +53,11 @@
 
 .description p {
   display: block;
+  color: #fff;
 }
 
 .specs {
   width: 100%;
-  
 }
 
 .specs p {
@@ -63,25 +66,25 @@
 }
 
 .red {
-  color: #D80000;
+  color: #ffbb00;
   font-size: 18px;
   font-weight: 600;
 }
 
 .add {
-  background: #5FD800;
+  background: #3f7e0f;
 }
 
 .add:hover {
-  background: #68df0d;
+  background: #305f0c;
 }
 
 .remove {
-  background: #D80000;
+  background: #991010;
 }
 
 .remove:hover {
-  background: #ff0202;
+  background: #701010;
 }
 
 .top {
@@ -105,8 +108,6 @@
   cursor: pointer;
   outline: none;
 }
-
-
 
 .add:disabled, .remove:disabled {
   background: #787474;
