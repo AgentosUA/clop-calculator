@@ -1,0 +1,19 @@
+.sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  min-width: 250px;
+  position: relative;
+}
+
+.cartWrapper {
+  position: fixed;
+  left: 25px;
+  top: 150;
+}
+.filterWrapper {
+  position: fixed;
+  left: 25px;
+  top: 400px;
+}

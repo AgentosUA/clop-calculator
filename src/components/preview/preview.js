@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './preview.module.css'
 
-const Preview = ({ totalPrice, cart = [], onAdd, onRemove, army }) => {
+const Preview = ({ totalPrice = 0, cart = [], onAdd = () => {}, onRemove = () => {} , army = '' }) => {
   const clipBoard = () => {
     return String(cart.map(item => `${item.quantity}x ${item.name}\n`)).replace('[', '').replace(']','').replace(',','');
   }
