@@ -19,14 +19,13 @@ function App() {
     }
 
     fetchProducts();
-  });
+  }, []);
 
   return (
     <Fragment>
       <Header />
       <main>
         {location.pathname !== '/' && <Sidebar />}
-        {/*{console.log(currentLocation)}*/}
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/us' exact component={Us} />

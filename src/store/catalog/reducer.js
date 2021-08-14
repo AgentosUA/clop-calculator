@@ -1,4 +1,20 @@
-export const catalog = (state = {}, action) => {
+const defaultState = {
+  categories: [],
+  units: {
+    ru: [],
+    us: [],
+  },
+  filters: {
+    params: {
+      minPrice: 0,
+      maxPrice: 100,
+      search: '',
+    },
+    categories: []
+  },
+}
+
+export const catalog = (state = defaultState, action) => {
   switch (action.type) {
     case 'SET_UNITS':
       const usUnits = action?.payload?.filter(unit => unit?.side === 'US')
@@ -12,14 +28,36 @@ export const catalog = (state = {}, action) => {
         }
       };
     case 'SET_CATEGORIES':
+      const categories = action?.payload?.map((category) => category?.name)
       return {
         ...state,
-        categories: action?.payload?.map((category) => category?.name)
+        categories,
+        filters: {
+          ...state.filters,
+          categories: categories.map(category => ({
+            name: category,
+            isChecked: true,
+          }))
+        }
       }
-    case 'SET_FILTERS':
+    case 'SET_SELECTED_CATEGORY':
       return {
         ...state,
-        filters: action?.payload
+        filters: {
+          ...state.filters,
+          categories: action?.payload
+        },
+      }
+    case 'SET_PARAMS':
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          params: {
+            ...state.filters.params,
+            [action?.payload?.name]: action?.payload?.value
+          }
+        }
       }
     default:
       return state;

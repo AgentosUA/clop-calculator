@@ -1,80 +1,43 @@
 import React, { useState, useEffect } from 'react'
 import { Fragment } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useLocalStorage } from '../../hooks'
 import styles from './filters.module.css'
+import { setParams, setSelectedCategories } from '../../store/catalog';
 
 const Filters = () => {
-  const [searchValue, setSearchValue] = useState('');
-  const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(100);
+  const dispatch = useDispatch();
 
-  const [isCar, setisCar] = useState(true);
-  const [isTruckVehicle, setIsTruckVehicle] = useState(true);
-  const [isLightVehicle, setIsLightVehicle] = useState(true);
-  const [isHeavyVehicle, setIsHeavyVehicle] = useState(true);
-  const [isAirVehicle, setIsAirVehicle] = useState(true);
-  const [isExtra, setIsExtra] = useState(true);
-
-  const [totalPrice, setTotalPrice] = useState(0);
-  const [cart, set_cart] = useLocalStorage('', []);
-  const { categories } = useSelector((state) => state.catalog);
-
-  useEffect(() => {
-    setTotalPrice(cart.reduce((count = 0, item) => count + (item.price * item.quantity), 0));
-  }, [cart])
+  const { filters: { categories, params: { minPrice, maxPrice, search } } } = useSelector((state) => state.catalog);
 
   const onSearchValueChange = (value) => {
-    setSearchValue(value);
+    dispatch(setParams({ name: 'search', value }));
   }
 
   const onMinPriceChange = (value) => {
-    setMinPrice(value);
+    if (value <= 100 && value >= 0 && !isNaN(Number(value))) {
+      dispatch(setParams({ name: 'minPrice', value }));
+    }
   }
 
   const onMaxPriceChange = (value) => {
-    setMaxPrice(value);
+    if (value <= 100 && value >= 0 && !isNaN(Number(value))) {
+      dispatch(setParams({ name: 'maxPrice', value }));
+    }
   }
 
-  const onAdd = (vehicle) => {
-    if (!cart || !cart.length) {
-      set_cart([{ ...vehicle, quantity: 1 }]);
-      return;
-    }
-
-    const isExists = cart.find(item => {
-      return item.name === vehicle.name
-    })
-
-    if (isExists) {
-      isExists.quantity += 1;
-      set_cart([...cart.filter(item => item.name !== isExists.name), isExists]);
-      return;
-    }
-
-    vehicle.quantity = 1;
-    set_cart([...cart, vehicle]);
-  }
-
-  const onRemove = (vehicle) => {
-    if (!cart || !cart.length) return;
-
-    const cartProduct = cart.find(item => item.name === vehicle.name);
-    if (cartProduct.quantity < 2) {
-      set_cart([...cart.filter(item => item.name !== cartProduct.name)]);
-      return;
-    }
-
-    cartProduct.quantity -= 1;
-    set_cart([...cart.filter(item => item.name !== cartProduct.name), cartProduct]);
-
+  const onFilterChange = ({ type, name, value }) => {
+    const cloneCategories = [...categories];
+    const index = cloneCategories?.findIndex((filter) => filter?.name === name);
+    cloneCategories[index].isChecked = value;
+    dispatch(setSelectedCategories(cloneCategories));
   }
 
   return (
     <div className={styles.filters}>
       <div className={styles.search}>
         <label htmlFor='search'>Поиск</label><br />
-        <input name='search' type='text' placeholder='Название или класснейм' value={searchValue} onChange={(e) => onSearchValueChange(e.target.value)} />
+        <input name='search' type='text' placeholder='Название или класснейм' value={search} onChange={(e) => onSearchValueChange(e.target.value)} />
       </div>
       <div className={styles.price}>
         <div>
@@ -90,8 +53,18 @@ const Filters = () => {
         {categories?.map((category) => {
           return (
             <Fragment>
-              <input type='checkbox' checked="true" value="true" onChange={(e) => { }} />
-              <label>{category}</label><br />
+              <input
+                type='checkbox'
+                checked={category.isChecked}
+                value={category.isChecked}
+                onChange={
+                  () => onFilterChange({
+                    type: 'category',
+                    name: category.name, value: !category.isChecked
+                  })
+                }
+              />
+              <label>{category.name}</label><br />
             </Fragment>
           )
         })}

@@ -6,13 +6,13 @@ const Sidebar = () => {
   return (
     <aside className={styles.sidebarWrapper}>
       <div className={styles.sidebarContainer}>
-        <div className={styles.cartWrapper}>
+        <div className={styles.filterWrapper}>
           <Filters />
         </div>
-        <div className={styles.filterWrapper}>
+        <div className={styles.cartWrapper}>
           <Preview />
         </div>
-      </div>
+        </div>
     </aside>
   )
 }

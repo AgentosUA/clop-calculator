@@ -6,9 +6,9 @@ import styles from './products.module.css'
 const Products = ({ name, isVisible, cart, products, filter, onAdd, onRemove, totalPrice, army, type,  }) => {
   return (
     <Fragment>
-      {isVisible && filter(products).length > 0 && <h3>{name}</h3>}
-      {isVisible && <div className={styles.products}>
-        {filter(products).map((vehicle) => {
+      {isVisible && products.length > 0 && <h3 className={styles.title}>{name}</h3>}
+      <div className={styles.products}>
+        {products.map((vehicle) => {
           return (
             <Card
               key={vehicle.name}
@@ -28,11 +28,11 @@ const Products = ({ name, isVisible, cart, products, filter, onAdd, onRemove, to
               onAdd={() => onAdd(vehicle)}
               onRemove={() => onRemove(vehicle)}
               addDisabled={vehicle.price + totalPrice > 100}
-              removeDisabled={!cart.find(item => item.name === vehicle.name)}
+              removeDisabled={true}
             />
           )
         })}
-      </div>}
+      </div>
     </Fragment>
   )
 }

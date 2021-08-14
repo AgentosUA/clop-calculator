@@ -20,12 +20,28 @@ body {
   background-repeat: no-repeat;
 }
 
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 main {
   margin: 0 auto;
   padding-top: 130px;
   min-height: 600px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   width: 100%;
+  flex-wrap: nowrap;
   background: rgba(0, 0, 0, 0.8);
 }

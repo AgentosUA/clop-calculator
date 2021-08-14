@@ -3,7 +3,7 @@
   padding: 25px;
   display: flex;
   justify-content: space-between;
-  max-width: 500px;
+  max-width: 480px;
   min-height: 300px;
   width: 100%;
   background: #292929;
@@ -29,6 +29,7 @@
 }
 
 .interface img {
+  border-radius: 8px;
   width: 100%;
   text-align: center;
 }
