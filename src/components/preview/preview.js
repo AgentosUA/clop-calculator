@@ -18,7 +18,7 @@ const Preview = () => {
           `${item.quantity}x ${item.name} (${item.price * item.quantity} points)${
             products.length === index + 1 ? '' : '\n'
           }`
-      )
+      ) + `\nВсего: ${cart[army]?.total} points`
     ).replaceAll(',', '');
   };
 
