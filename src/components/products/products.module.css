@@ -1,6 +1,10 @@
 .products {
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+.title {
+  color: #fff;
 }

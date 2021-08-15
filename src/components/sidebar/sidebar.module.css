@@ -1,0 +1,37 @@
+.sidebarWrapper {
+  margin-right: 30px;
+  min-width: 330px;
+  width: 100%;
+  display: block;
+  height: 100%;
+  flex: .1;
+  position: relative;
+}
+
+.sidebarContainer {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  left: 25px;
+  top: 235px;
+  bottom: 0;
+  right: auto;
+  overflow-y: auto;
+}
+
+.filterWrapper, .cartWrapper {
+  max-width: 330px;
+  width: 330px;
+}
+
+@media only screen and (max-width: 780px)  {
+  .sidebarWrapper {
+    margin-right: 0 auto;
+  }
+
+  .sidebarContainer {
+    position: relative;
+    margin: 0 auto;
+  }
+}

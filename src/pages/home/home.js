@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import styles from './home.module.css'
 
-import ru_flag from '../../assets/ru_flag.jpg';
+import ru_flag from '../../assets/ru_flag.png';
 import us_flag from '../../assets/us_flag.png';
 
 const Home = () => {
@@ -11,7 +11,6 @@ const Home = () => {
     <section className={styles.home}>
       <h2 className={styles.title}>Йоу, выбирай сторону и поехали собирать войска!</h2>
       <div className={styles.sides}>
-
         <div>
           <Link to='/us'>
             <img src={us_flag} alt='us_flag' />
@@ -27,12 +26,12 @@ const Home = () => {
       </div>
       <div className={styles.instructions}>
         <h2>Как делать закуп?</h2>
-        <ul>
+        <ol>
           <li>Выбираете сторону</li>
           <li>Выбираете нужные вам юниты, используя поиск и здравый смысл</li>
           <li>Заходите в корзину и выбираете "скопировать в буфер обмена", либо копируете закуп лапками</li>
           <li>Отправляете свой закуп организатору CLOP'а</li>
-        </ul>
+        </ol>
       </div>
     </section>
   )

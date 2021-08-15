@@ -1,191 +1,61 @@
-import React, { useEffect, useState } from 'react'
-import { Preview } from '../../components'
-import { Products } from '../../components/products/products'
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
-import { useLocalStorage } from '../../hooks'
-import styles from './catalog.module.css'
+import { Products } from '../../components/products/products';
 
-const Catalog = ({carJSON, truckJSON, lightJSON, heavyJSON, airJSON, extraJSON, cartName, army}) => {
-  const [searchValue, setSearchValue] = useState('');
-  const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(100);
+import styles from './catalog.module.css';
 
-  const [isCar, setisCar] = useState(true);
-  const [isTruckVehicle, setIsTruckVehicle] = useState(true);
-  const [isLightVehicle, setIsLightVehicle] = useState(true);
-  const [isHeavyVehicle, setIsHeavyVehicle] = useState(true);
-  const [isAirVehicle, setIsAirVehicle] = useState(true);
-  const [isExtra, setIsExtra] = useState(true);
+import { addProduct, removeProduct } from '../../store/cart';
 
-  const [totalPrice, setTotalPrice] = useState(0);
-  const [cart, set_cart] = useLocalStorage(cartName, [])
+const Catalog = ({ army = 'us' }) => {
+  const dispatch = useDispatch();
+  const {
+    catalog: { units, filters },
+    cart,
+  } = useSelector((state) => state);
+
+  const onAddProduct = (product) => {
+    dispatch(addProduct(product));
+  };
   
-  useEffect(() => {
-    setTotalPrice(cart.reduce((count = 0, item) => count + (item.price * item.quantity), 0));
-  }, [cart])
-
-  const onSearchValueChange = (value) => {
-    setSearchValue(value);
-  }
-
-  const onMinPriceChange = (value) => {
-    setMinPrice(value);
-  }
-
-  const onMaxPriceChange = (value) => {
-    setMaxPrice(value);
-  }
-
-  const onAdd = (vehicle) => {
-    if (!cart || !cart.length) {
-      set_cart([{ ...vehicle, quantity: 1 }]);
-      return;
-    }
-
-    const isExists = cart.find(item => {
-      return item.name === vehicle.name
-    })
-
-    if (isExists) {
-      isExists.quantity += 1;
-      set_cart([...cart.filter(item => item.name !== isExists.name), isExists]);
-      return;
-    }
-
-    vehicle.quantity = 1;
-    set_cart([...cart, vehicle]);
-  }
-
-  const onRemove = (vehicle) => {
-    if (!cart || !cart.length) return;
-
-    const cartProduct = cart.find(item => item.name === vehicle.name);
-    if (cartProduct.quantity < 2) {
-      set_cart([...cart.filter(item => item.name !== cartProduct.name)]);
-      return;
-    }
-
-    cartProduct.quantity -= 1;
-    set_cart([...cart.filter(item => item.name !== cartProduct.name), cartProduct]);
-
-  }
-
-  const filter = (vehicles) => {
-    return vehicles.filter((vehicle) => {
-      return (
-        vehicle.price >= minPrice
-        && vehicle.price <= maxPrice
-        && (
-          searchValue ?
-            vehicle.name.toLowerCase().trim().replace('(', '').replace(')', '').includes(searchValue.toLowerCase().trim().replace('(', '').replace(')', ''))
-            : true
-        )
-      )
-    })
+  const onRemoveProduct = (product) => {
+    dispatch(removeProduct(product));
   };
 
   return (
-    <section className={styles.us}>
-      <Preview army={army} totalPrice={totalPrice} cart={cart} onAdd={onAdd} onRemove={onRemove} />
-      <div className={styles.filters}>
-        <div className={styles.search}>
-          <label htmlFor='search'>Поиск</label><br />
-          <input name='search' type='text' placeholder='Поиск по названию' value={searchValue} onChange={(e) => onSearchValueChange(e.target.value)} />
-        </div>
-        <div className={styles.parameters}>
-          <div>
-            <label htmlFor='search'>Мин цена</label><br />
-            <input type='number' min='0' max='100' step='1' value={minPrice} onChange={(e) => onMinPriceChange(e.target.value)} />
-          </div>
-          <div>
-            <label htmlFor='search'>Макс цена</label><br />
-            <input type='number' min='0' max='100' step='1' value={maxPrice} onChange={(e) => onMaxPriceChange(e.target.value)} />
-          </div>
-        </div>
-        <div className={styles.unitsType}>
-        <input type='checkbox' checked={isCar} value={isCar} onChange={(e) => setisCar(!isCar)} />
-          <label htmlFor='isLightVehicle'>Автомобили</label><br />
-          
-          <input type='checkbox' checked={isTruckVehicle} value={isTruckVehicle} onChange={(e) => setIsTruckVehicle(!isTruckVehicle)} />
-          <label htmlFor='isTruckVehicle'>Грузовики</label><br />
-
-          <input type='checkbox' checked={isLightVehicle} value={isLightVehicle} onChange={(e) => setIsLightVehicle(!isLightVehicle)} />
-          <label htmlFor='isLightVehicle'>Легкая техника</label><br />
-
-          <input type='checkbox' checked={isHeavyVehicle} value={isHeavyVehicle} onChange={(e) => setIsHeavyVehicle(!isHeavyVehicle)} />
-          <label htmlFor='isHeavyVehicle'>Тяжёлая техника</label><br />
-          
-
-          <input type='checkbox' checked={isAirVehicle} value={isAirVehicle} onChange={(e) => setIsAirVehicle(!isAirVehicle)} />
-          <label htmlFor='isLightVehicle'>Авиация</label><br />
-
-          <input type='checkbox' checked={isExtra} value={isExtra} onChange={(e) => setIsExtra(!isExtra)} />
-          <label htmlFor='isExtra'>Доп. вооружение</label>
-          
-        </div>
-      </div>
-      <Products
-        name='Автомобили'
-        filter={filter}
-        isVisible={isCar}
-        products={carJSON}
-        totalPrice={totalPrice}
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cart={cart}
-      />
-      <Products
-        name='Грузовики'
-        filter={filter}
-        isVisible={isTruckVehicle}
-        products={truckJSON}
-        totalPrice={totalPrice}
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cart={cart}
-      />
-      <Products
-        name='Легкая техника'
-        filter={filter}
-        isVisible={isLightVehicle}
-        products={lightJSON}
-        totalPrice={totalPrice}
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cart={cart}
-      />
-      <Products
-        name='Тяжёлая техника'
-        filter={filter}
-        isVisible={isHeavyVehicle}
-        products={heavyJSON}
-        totalPrice={totalPrice}
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cart={cart}
-      />
-      <Products
-        name='Авиация'
-        filter={filter}
-        isVisible={isAirVehicle}
-        products={airJSON}
-        totalPrice={totalPrice}
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cart={cart}
-      />
-      <Products
-        name='Доп. вооружение'
-        filter={filter}
-        isVisible={isExtra}
-        products={extraJSON}
-        totalPrice={totalPrice}
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cart={cart}
-      />
+    <section className={styles.catalog}>
+      {filters.categories
+        .filter((category) => category.isChecked)
+        ?.map((category) => {
+          return (
+            <Products
+              key={category.name}
+              name={category.name}
+              products={units[army].filter((product) => {
+                return (
+                  product.category === category.name &&
+                  filters.params.minPrice <= product.price &&
+                  filters.params.maxPrice >= product.price &&
+                  (product.name
+                    .toLowerCase()
+                    .trim()
+                    .includes(filters.params.search.toLowerCase().trim()) ||
+                    product?.className
+                      ?.toLowerCase()
+                      .trim()
+                      .includes(filters.params.search.toLowerCase().trim()))
+                );
+              })}
+              total={cart[army].total}
+              cart={cart}
+              onAdd={onAddProduct}
+              onRemove={onRemoveProduct}
+              army={army}
+            />
+          );
+        })}
     </section>
-  )
-}
+  );
+};
 
 export { Catalog };

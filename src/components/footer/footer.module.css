@@ -1,6 +1,13 @@
 .footer {
-  margin: 25px auto;
+  margin: 0 auto;
+  padding: 25px;
   width: 100%;
   text-align: center;
   color: #fff;
+  height: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.names {
+  color: #ffbb00;
 }
