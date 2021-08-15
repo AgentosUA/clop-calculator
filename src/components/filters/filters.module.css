@@ -1,11 +1,10 @@
 .filters {
-  margin: 15px auto;
+  margin: 0 auto;
   padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  max-width: 280px;
   width: 100%;
   background: #292929;
   overflow: hidden;

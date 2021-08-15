@@ -4,9 +4,9 @@ import styles from './footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p>App by Agentos<br />
-      Idea and support by XDred<br />
-      Vehicle screenshots by Dagon, Darude, HoLo_D<br />
+      <p><b>App by</b> <span className={styles.names}>Agentos & HoLo_D</span><br />
+      <b>Idea, host and support by</b> <span className={styles.names}>XDred</span><br />
+      <b>Vehicle screenshots by</b> <span className={styles.names}>Dagon, Darude, HoLo_D</span><br />
       </p>
     </footer>
   )

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import styles from './home.module.css'
 
-import ru_flag from '../../assets/ru_flag.jpg';
+import ru_flag from '../../assets/ru_flag.png';
 import us_flag from '../../assets/us_flag.png';
 
 const Home = () => {

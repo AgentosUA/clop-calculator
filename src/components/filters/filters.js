@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useLocalStorage } from '../../hooks'
 import styles from './filters.module.css'
 import { setParams, setSelectedCategories } from '../../store/catalog';
 
@@ -52,7 +51,7 @@ const Filters = () => {
       <div className={styles.unitsType}>
         {categories?.map((category) => {
           return (
-            <Fragment>
+            <Fragment key={category.name}>
               <input
                 type='checkbox'
                 checked={category.isChecked}

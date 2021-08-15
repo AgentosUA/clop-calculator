@@ -8,7 +8,7 @@ const Navigation = () => {
       <Link to='/'>Главная</Link>
       <Link to='/us'>US Army</Link>
       <Link to='/ru'>ВС РФ</Link>
-      <Link to='/cart'>Корзина</Link>
+      {/* <Link to='/cart'>Корзина</Link> */}
     </nav>
   )
 }

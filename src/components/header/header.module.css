@@ -9,6 +9,7 @@
   display: block;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .title {
@@ -17,4 +18,10 @@
 
 .about {
   color: rgb(231, 78, 78);
+}
+
+@media only screen and (max-width: 780px)  {
+  .header {
+    position: relative;
+  }
 }

@@ -42,6 +42,10 @@
   width: 50%;
 }
 
+.config {
+  color: #ffbb00 !important; 
+}
+
 .description h3, .description span {
   text-align: center;
   display: block;

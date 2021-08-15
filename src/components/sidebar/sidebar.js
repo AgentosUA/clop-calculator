@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './sidebar.module.css'
-import { Navigation } from '../navigation';
 import { Preview, Filters } from '../../components';
 const Sidebar = () => {
   return (
