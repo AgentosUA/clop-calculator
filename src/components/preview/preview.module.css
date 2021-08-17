@@ -65,7 +65,19 @@
 }
 
 .remove {
-  background: #d80000;
+  background: #991010;
+}
+
+.add:hover {
+  background: #305f0c;
+}
+
+.remove:hover {
+  background: #701010;
+}
+
+.add:disabled, .remove:disabled {
+  background: #787474;
 }
 
 .cartButtons {
@@ -107,10 +119,14 @@
 }
 
 .clearCart {
-  background: #d80000;
+  background: #991010;
 }
 
-.clipboard:hover,
+.clipboard:hover {
+
+  background: #305f0c;
+}
+
 .clearCart:hover {
-  background: rgb(44, 40, 40);
+  background: #701010;
 }
