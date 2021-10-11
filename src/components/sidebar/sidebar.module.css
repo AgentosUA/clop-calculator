@@ -27,11 +27,14 @@
 
 @media only screen and (max-width: 780px)  {
   .sidebarWrapper {
-    margin-right: 0 auto;
+    margin: 0 auto 50px auto;
   }
 
   .sidebarContainer {
     position: relative;
     margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 80px;
   }
 }

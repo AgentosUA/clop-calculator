@@ -117,3 +117,15 @@
 .add:disabled, .remove:disabled {
   background: #787474;
 }
+
+@media only screen and (max-width: 780px)  {
+  .card {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;    
+  }
+  .interface, .description {
+    width: 100%;
+  }
+}

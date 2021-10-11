@@ -12,9 +12,9 @@ function App() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const { data: units } = await axios.get('http://localhost:2000/units');
+      const { data: units } = await axios.get('https://clop.armaproject.ru/units');
       const { data: categories } = await axios.get(
-        'http://localhost:2000/categories'
+        'https://clop.armaproject.ru/categories'
       );
       dispatch(setUnits(units));
       dispatch(setCategories(categories));

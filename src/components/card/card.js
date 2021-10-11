@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './card.module.css';
+
+import cardErrorImage from '../../assets/card-error.jpg';
 
 const Card = ({
   id,
@@ -17,10 +19,12 @@ const Card = ({
   addDisabled = false,
   removeDisabled = true,
 }) => {
+  const [isImageError, setIsImageError] = useState(false);
+
   return (
     <div className={styles.card} key={id}>
       <div className={styles.interface}>
-        <img src={img} alt='military vehicle' />
+        <img src={isImageError ? cardErrorImage : img} alt='military vehicle' onError={() => setIsImageError(true)} />
         <div className={styles.price}>
           <span className={styles.red}>Цена:</span> {price}
         </div>

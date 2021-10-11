@@ -23,5 +23,7 @@
 @media only screen and (max-width: 780px)  {
   .header {
     position: relative;
+    height: 250px;
+    padding: 10px 5px;
   }
 }
