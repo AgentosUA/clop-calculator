@@ -28,6 +28,7 @@ const Products = ({ name, products, onAdd, onRemove, total, cart, army }) => {
               price={vehicle.price}
               weapons={vehicle.weapon}
               ammo={vehicle.ammo}
+              isCrew={vehicle.isCrew}
               crewCount={vehicle.crewCount}
               comment={vehicle.comment}
               onAdd={() =>

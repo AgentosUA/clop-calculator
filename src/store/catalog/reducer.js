@@ -9,6 +9,7 @@ const defaultState = {
       minPrice: 0,
       maxPrice: 100,
       search: '',
+      allSelected: true,
     },
     categories: []
   },

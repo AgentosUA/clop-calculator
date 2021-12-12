@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './filters.module.css'
@@ -6,8 +6,7 @@ import { setParams, setSelectedCategories } from '../../store/catalog';
 
 const Filters = () => {
   const dispatch = useDispatch();
-
-  const { filters: { categories, params: { minPrice, maxPrice, search } } } = useSelector((state) => state.catalog);
+  const { filters: { categories, params: { minPrice, maxPrice, search, allSelected } } } = useSelector((state) => state.catalog);
 
   const onSearchValueChange = (value) => {
     dispatch(setParams({ name: 'search', value }));
@@ -32,6 +31,20 @@ const Filters = () => {
     dispatch(setSelectedCategories(cloneCategories));
   }
 
+  const onCheckAllCategories = (check) => {
+    const cloneCategories = [...categories];
+    cloneCategories.forEach(item => item.isChecked = check);
+    dispatch(setSelectedCategories(cloneCategories));
+  }
+
+  const setAllSelected = () => {
+    dispatch(setParams({ name: 'allSelected', value: !allSelected }));
+  };
+
+  useEffect(() => {
+    onCheckAllCategories(allSelected);
+  }, [allSelected]);
+
   return (
     <div className={styles.filters}>
       <div className={styles.search}>
@@ -49,6 +62,13 @@ const Filters = () => {
         </div>
       </div>
       <div className={styles.unitsType}>
+        <input
+          type='checkbox'
+          checked={allSelected}
+          onChange={setAllSelected}
+        />
+        <label>Все категории</label>
+        <br />
         {categories?.map((category) => {
           return (
             <Fragment key={category.name}>
@@ -63,6 +83,17 @@ const Filters = () => {
                   })
                 }
               />
+              {/*<input
+                type='checkbox'
+                checked={category.isChecked}
+                value={category.isChecked}
+                onChange={
+                  () => onFilterChange({
+                    type: 'category',
+                    name: category.name, value: !category.isChecked
+                  })
+                }
+              />*/}
               <label>{category.name}</label><br />
             </Fragment>
           )

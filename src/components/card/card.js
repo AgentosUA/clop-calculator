@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import styles from './card.module.css';
 
+import weaponIcon from '../../assets/icons/weapon.png';
+import ammoIcon from '../../assets/icons/ammo.png';
+import crewCountIcon from '../../assets/icons/military-boots.png';
+import crewIcon from '../../assets/icons/crew.png';
+import descriptionIcon from '../../assets/icons/description.png';
 import cardErrorImage from '../../assets/card-error.jpg';
+
+
 
 const Card = ({
   id,
@@ -54,22 +61,26 @@ const Card = ({
           </a>
         </span>
         <div className={styles.specs}>
-          <p>
-            <b>Вооружение:</b> {weapons}
-          </p>
-          <p>
-            <b>БК:</b> {ammo || '-'}
-          </p>
-          <p>
-            <b>Кол-во экипажа:</b> {crewCount || 'Нет инфы'}
-          </p>
-          <p>
-            <b>Спец слот:</b> {isCrew ? 'Да' : 'Нет'}
-          </p>
-          <p>
-            <b>Комментарий:</b> <br />
+          <div className={styles.spec}>
+            <img src={weaponIcon} className={styles.icon} alt="icon" />
+            {weapons || 'Нет'}
+          </div>
+          <div className={styles.spec}>
+            <img src={ammoIcon} className={styles.icon} alt="icon" />
+            {ammo || 'Нет'}
+          </div>
+          <div className={styles.spec}>
+            <img src={crewIcon} className={styles.icon} alt="icon" />
+            {isCrew ? 'Да' : 'Нет'}
+          </div>
+          <div className={styles.spec}>
+            <img src={crewCountIcon} className={styles.icon} alt="icon" />
+            {crewCount || 'Неизвестно'}
+          </div>
+          <div className={styles.spec}>
+            {comment && <img src={descriptionIcon} className={styles.icon} alt="icon" />}
             {comment}
-          </p>
+          </div>
         </div>
       </div>
     </div>
