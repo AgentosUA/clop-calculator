@@ -14,9 +14,9 @@ function App() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const { data: units } = await axios.get('https://armaproject.ru/units');
+      const { data: units } = await axios.get('https://clop.armaproject.ru/units');
       const { data } = await axios.get(
-        'https://armaproject.ru/categories'
+        'https://clop.armaproject.ru/categories'
       );
       dispatch(setUnits(units));
       dispatch(setCategories({ categories: data, clopType }));
