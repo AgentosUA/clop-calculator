@@ -21,3 +21,7 @@ export const setParams = (payload) => ({
   type: 'SET_PARAMS',
   payload,
 });
+
+export const resetFilters = () => ({
+  type: 'RESET_FILTERS',
+});

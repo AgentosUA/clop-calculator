@@ -80,6 +80,7 @@ export const cart = (state = defaultState, { type, payload }) => {
         return {
           ...state,
           [army]: {
+            ...state[army],
             [clopType]: {
               total: side.total - price,
               products: products.filter((product) => product.name !== name),
@@ -93,6 +94,7 @@ export const cart = (state = defaultState, { type, payload }) => {
       return {
         ...state,
         [army]: {
+          ...state[army],
           [clopType]: {
             total: side.total - price,
             products,
@@ -101,11 +103,16 @@ export const cart = (state = defaultState, { type, payload }) => {
       };
     }
     case 'CLEAR_CART': {
+      const { army, clopType } = payload;
+
       return {
         ...state,
-        [payload]: {
-          total: 0,
-          products: []
+        [army]: {
+          ...state[army],
+          [clopType]: {
+            total: 0,
+            products: []
+          }
         }
       }
     }

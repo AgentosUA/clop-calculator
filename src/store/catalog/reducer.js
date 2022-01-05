@@ -70,6 +70,22 @@ export const catalog = (state = defaultState, action) => {
           }
         }
       }
+    case 'RESET_FILTERS':
+      return {
+        ...state,
+        filters: {
+          params: {
+            minPrice: 0,
+            maxPrice: 100,
+            search: '',
+            allSelected: true,
+          },
+          categories: state.filters.categories.map(category => ({
+            name: category?.name,
+            isChecked: true,
+          })),
+        }
+      }
     default:
       return state;
   }

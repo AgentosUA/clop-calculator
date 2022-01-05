@@ -3,7 +3,7 @@ import { Card } from '../../components';
 
 import styles from './products.module.css';
 
-const Products = ({ name, products, onAdd, onRemove, total, cart, army, clopType }) => {
+const Products = ({ name, products, onAdd, onRemove, total, cart, army, clopType, priceLimit }) => {
   return (
     <Fragment>
       {products?.length > 0 && <h3 className={styles.title}>{name}</h3>}
@@ -47,7 +47,7 @@ const Products = ({ name, products, onAdd, onRemove, total, cart, army, clopType
                   clopType,
                 })
               }
-              addDisabled={vehicle.price + total > 100}
+              addDisabled={vehicle.price + total > priceLimit}
               removeDisabled={
                 !cart[army][clopType]?.products.find(
                   (product) => product.name === vehicle.name

@@ -1,12 +1,14 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { usePriceLimit } from '../../hooks';
 import { addProduct, clearCart, removeProduct } from '../../store/cart';
 import styles from './preview.module.css';
 
 const Preview = ({ clopType = 'heavy' }) => {
   const dispatch = useDispatch();
   const location = useLocation();
+  const priceLimit = usePriceLimit(clopType);
   const { cart } = useSelector((state) => state);
   const [army, setArmy] = useState('us');
 
@@ -31,7 +33,7 @@ const Preview = ({ clopType = 'heavy' }) => {
   };
 
   const onClearCart = () => {
-    dispatch(clearCart(army));
+    dispatch(clearCart({ army, clopType }));
   };
 
   useEffect(() => {
@@ -49,7 +51,7 @@ const Preview = ({ clopType = 'heavy' }) => {
       <div className={styles.us_preview}>
         <h2>Закуп {army?.toUpperCase()} {clopType?.toUpperCase()}</h2>
         <h4>
-          Доступно очков: {100 - (cart[army][clopType]?.total || 0)}
+          Доступно очков: {priceLimit - (cart[army][clopType]?.total || 0)}
           <br />
           Сумма: {cart[army][clopType]?.total || 0}
         </h4>
@@ -75,7 +77,7 @@ const Preview = ({ clopType = 'heavy' }) => {
                     <button
                       className={styles.add}
                       onClick={() =>
-                        item.price + cart[army][clopType]?.total > 100
+                        item.price + cart[army][clopType]?.total > priceLimit
                           ? null
                           : onAddProduct({
                               name: item.name,
@@ -84,7 +86,7 @@ const Preview = ({ clopType = 'heavy' }) => {
                               clopType,
                             })
                       }
-                      disabled={item.price + cart[army][clopType]?.total > 100}>
+                      disabled={item.price + cart[army][clopType]?.total > priceLimit}>
                       +
                     </button>
                     <button

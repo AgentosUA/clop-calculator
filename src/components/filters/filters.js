@@ -2,10 +2,12 @@ import React, { useEffect } from 'react'
 import { Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './filters.module.css'
-import { setParams, setSelectedCategories } from '../../store/catalog';
+import { setParams, setSelectedCategories, resetFilters } from '../../store/catalog';
+import { usePriceLimit } from '../../hooks';
 
 const Filters = (clopType) => {
   const dispatch = useDispatch();
+  const priceLimit = usePriceLimit(clopType);
   const { filters: { categories, params: { minPrice, maxPrice, search, allSelected } } } = useSelector((state) => state.catalog);
 
   const onSearchValueChange = (value) => {
@@ -13,13 +15,13 @@ const Filters = (clopType) => {
   }
 
   const onMinPriceChange = (value) => {
-    if (value <= 100 && value >= 0 && !isNaN(Number(value))) {
+    if (value <= priceLimit && value >= 0 && !isNaN(Number(value))) {
       dispatch(setParams({ name: 'minPrice', value }));
     }
   }
 
   const onMaxPriceChange = (value) => {
-    if (value <= 100 && value >= 0 && !isNaN(Number(value))) {
+    if (value <= priceLimit && value >= 0 && !isNaN(Number(value))) {
       dispatch(setParams({ name: 'maxPrice', value }));
     }
   }
@@ -41,10 +43,20 @@ const Filters = (clopType) => {
     dispatch(setParams({ name: 'allSelected', value: !allSelected }));
   };
 
+  const reset = () => {
+    dispatch(resetFilters());
+  }
+
   useEffect(() => {
     onCheckAllCategories(allSelected);
     // eslint-disable-next-line
   }, [allSelected]);
+
+  const isResetDisabled = (categories?.filter(category => category.isChecked)?.length === categories?.length)
+    && allSelected
+    && String(minPrice) === '0'
+    && String(maxPrice) === '100'
+    && search === '';
 
   return (
     <div className={styles.filters}>
@@ -64,7 +76,7 @@ const Filters = (clopType) => {
           <input
             type='number'
             min='0'
-            max='100'
+            max={String(priceLimit)}
             step='1'
             value={minPrice}
             onChange={(e) => onMinPriceChange(e.target.value)}
@@ -75,7 +87,7 @@ const Filters = (clopType) => {
           <input
             type='number'
             min='0'
-            max='100'
+            max={String(priceLimit)}
             step='1'
             value={maxPrice}
             onChange={(e) => onMaxPriceChange(e.target.value)}
@@ -104,22 +116,18 @@ const Filters = (clopType) => {
                   })
                 }
               />
-              {/*<input
-                type='checkbox'
-                checked={category.isChecked}
-                value={category.isChecked}
-                onChange={
-                  () => onFilterChange({
-                    type: 'category',
-                    name: category.name, value: !category.isChecked
-                  })
-                }
-              />*/}
               <label>{category.name}</label><br />
             </Fragment>
           )
         })}
       </div>
+      <button
+        className={styles.reset}
+        onClick={reset}
+        disabled={isResetDisabled}
+      >
+        Сбросить фильтры
+      </button>
     </div>
   )
 }

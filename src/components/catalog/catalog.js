@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Products } from '../../components/products/products';
-import { useClopType } from '../../hooks';
+import { useClopType, usePriceLimit } from '../../hooks';
 import styles from './catalog.module.css';
 
 import { addProduct, removeProduct } from '../../store/cart';
 
 const Catalog = ({ army = 'us'}) => {
   const clopType = useClopType();
+  const priceLimit = usePriceLimit(clopType);
   const dispatch = useDispatch();
   const {
     catalog: { units, filters },
@@ -22,6 +23,10 @@ const Catalog = ({ army = 'us'}) => {
   const onRemoveProduct = (product) => {
     dispatch(removeProduct(product));
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [clopType]);
 
   return (
     <section className={styles.catalog}>
@@ -50,6 +55,7 @@ const Catalog = ({ army = 'us'}) => {
                 );
               })}
               total={cart[army][clopType]?.total}
+              priceLimit={priceLimit}
               cart={cart}
               onAdd={onAddProduct}
               onRemove={onRemoveProduct}

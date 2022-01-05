@@ -14,7 +14,7 @@ const Sidebar = () => {
         <div className={styles.cartWrapper}>
           <Preview clopType={clopType} />
         </div>
-        </div>
+      </div>
     </aside>
   )
 }
