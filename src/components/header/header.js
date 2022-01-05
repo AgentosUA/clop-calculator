@@ -7,7 +7,7 @@ const Header = () => {
       <h1 className={styles.title}>CLOP Calculator</h1>
       <div>
         <span className={styles.subtitle}>Собирай свою армию для Classified Operations</span><br />
-        Специально для <span className={styles.about}>armaproject.ru</span>
+        Специально для <a href="https://armaproject.ru" className={styles.about}>armaproject.ru</a>
       </div>
       <Navigation />
     </header>

@@ -2,17 +2,18 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Products } from '../../components/products/products';
-
+import { useClopType } from '../../hooks';
 import styles from './catalog.module.css';
 
 import { addProduct, removeProduct } from '../../store/cart';
 
-const Catalog = ({ army = 'us' }) => {
+const Catalog = ({ army = 'us'}) => {
+  const clopType = useClopType();
   const dispatch = useDispatch();
   const {
     catalog: { units, filters },
     cart,
-  } = useSelector((state) => state);
+  } = useSelector((state) => state);  
 
   const onAddProduct = (product) => {
     dispatch(addProduct(product));
@@ -24,14 +25,16 @@ const Catalog = ({ army = 'us' }) => {
 
   return (
     <section className={styles.catalog}>
+      <h2 className={styles.catalogInfo}>{army?.toUpperCase()} | {clopType?.toUpperCase()}</h2>
       {filters.categories
-        .filter((category) => category.isChecked)
+        ?.filter((category) => category.isChecked)
         ?.map((category) => {
           return (
             <Products
               key={category.name}
               name={category.name}
-              products={units[army].filter((product) => {
+              clopType={clopType}
+              products={units[army][clopType]?.filter((product) => {
                 return (
                   product.category === category.name &&
                   filters.params.minPrice <= product.price &&
@@ -46,7 +49,7 @@ const Catalog = ({ army = 'us' }) => {
                       .includes(filters.params.search.toLowerCase().trim()))
                 );
               })}
-              total={cart[army].total}
+              total={cart[army][clopType]?.total}
               cart={cart}
               onAdd={onAddProduct}
               onRemove={onRemoveProduct}

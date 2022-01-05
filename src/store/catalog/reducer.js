@@ -1,8 +1,14 @@
 const defaultState = {
   categories: [],
   units: {
-    ru: [],
-    us: [],
+    ru: {
+      heavy: [],
+      light: []
+    },
+    us: {
+      heavy: [],
+      light: []
+    },
   },
   filters: {
     params: {
@@ -18,35 +24,39 @@ const defaultState = {
 export const catalog = (state = defaultState, action) => {
   switch (action.type) {
     case 'SET_UNITS':
-      const usUnits = action?.payload?.filter(unit => unit?.side === 'US')
-      const rfUnits = action?.payload?.filter(unit => unit?.side === 'RF')
-
+      const { us, ru } = action?.payload;
       return {
         ...state,
         units: {
-          ru: rfUnits,
-          us: usUnits,
+          ru: {
+            heavy: ru.heavy,
+            light: ru.light,
+          },
+          us: {
+            heavy: us.heavy,
+            light: us.light,
+          },
         }
       };
     case 'SET_CATEGORIES':
-      const categories = action?.payload?.map((category) => category?.name)
+      const { categories: category } = action?.payload;
       return {
         ...state,
-        categories,
+        categories: category?.us?.heavy || category || [],
         filters: {
           ...state.filters,
-          categories: categories.map(category => ({
-            name: category,
+          categories: category?.us?.heavy?.map(category => ({
+            name: category?.name,
             isChecked: true,
           }))
         }
       }
-    case 'SET_SELECTED_CATEGORY':
+    case 'SET_SELECTED_CATEGORIES':
       return {
         ...state,
         filters: {
           ...state.filters,
-          categories: action?.payload
+          categories: action?.payload,
         },
       }
     case 'SET_PARAMS':

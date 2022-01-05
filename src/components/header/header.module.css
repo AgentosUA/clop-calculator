@@ -18,6 +18,11 @@
 
 .about {
   color: rgb(231, 78, 78);
+  text-decoration: none;
+}
+
+.about:hover {
+  color: rgb(196, 177, 74);
 }
 
 @media only screen and (max-width: 780px)  {

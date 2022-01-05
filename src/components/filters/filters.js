@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import styles from './filters.module.css'
 import { setParams, setSelectedCategories } from '../../store/catalog';
 
-const Filters = () => {
+const Filters = (clopType) => {
   const dispatch = useDispatch();
   const { filters: { categories, params: { minPrice, maxPrice, search, allSelected } } } = useSelector((state) => state.catalog);
 
@@ -43,22 +43,43 @@ const Filters = () => {
 
   useEffect(() => {
     onCheckAllCategories(allSelected);
+    // eslint-disable-next-line
   }, [allSelected]);
 
   return (
     <div className={styles.filters}>
       <div className={styles.search}>
         <label htmlFor='search'>Поиск</label><br />
-        <input name='search' type='text' placeholder='Название или класснейм' value={search} onChange={(e) => onSearchValueChange(e.target.value)} />
+        <input
+          name='search'
+          type='text'
+          placeholder='Название или класснейм'
+          value={search}
+          onChange={(e) => onSearchValueChange(e.target.value)}
+        />
       </div>
       <div className={styles.price}>
         <div>
           <label htmlFor='search'>Мин цена</label><br />
-          <input type='number' min='0' max='100' step='1' value={minPrice} onChange={(e) => onMinPriceChange(e.target.value)} />
+          <input
+            type='number'
+            min='0'
+            max='100'
+            step='1'
+            value={minPrice}
+            onChange={(e) => onMinPriceChange(e.target.value)}
+          />
         </div>
         <div>
           <label htmlFor='search'>Макс цена</label><br />
-          <input type='number' min='0' max='100' step='1' value={maxPrice} onChange={(e) => onMaxPriceChange(e.target.value)} />
+          <input
+            type='number'
+            min='0'
+            max='100'
+            step='1'
+            value={maxPrice}
+            onChange={(e) => onMaxPriceChange(e.target.value)}
+          />
         </div>
       </div>
       <div className={styles.unitsType}>

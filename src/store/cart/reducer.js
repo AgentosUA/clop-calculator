@@ -1,19 +1,35 @@
 const defaultState = {
   us: {
-    total: 0,
-    products: [],
+    heavy: {
+      total: 0,
+      products: [],
+    },
+    light: {
+      total: 0,
+      products: [],
+    },
   },
   ru: {
-    total: 0,
-    products: [],
+    heavy: {
+      total: 0,
+      products: [],
+    },
+    light: {
+      total: 0,
+      products: [],
+    },
   },
 };
 
 export const cart = (state = defaultState, { type, payload }) => {
   switch (type) {
     case 'ADD_PRODUCT':
-      const { army, name, price } = payload;
-      const side = state[army];
+      const { army, name, price, clopType } = payload;
+      if (!clopType && !army) return;
+      
+      console.log(state, army, clopType);
+      const side = state[army][clopType];
+
       const products = [...side.products];
 
       const existingProduct = products.find(
@@ -30,9 +46,12 @@ export const cart = (state = defaultState, { type, payload }) => {
         return {
           ...state,
           [army]: {
-            total: side.total + price,
-            products,
-          },
+            ...state[army],
+            [clopType]: {
+              total: side.total + price,
+              products,
+            },
+          }
         };
       }
 
@@ -41,25 +60,30 @@ export const cart = (state = defaultState, { type, payload }) => {
       return {
         ...state,
         [army]: {
-          total: side.total + price,
-          products,
+          ...state[army],
+          [clopType]: {
+            total: side?.total + price,
+            products,
+          }
         },
       };
     case 'REMOVE_PRODUCT': {
-      const { army, name, price } = payload;
-      const side = state[army];
+      const { army, name, price, clopType } = payload;
+      const side = state[army][clopType];
       const products = [...side.products];
       const productIndex = products.findIndex(
         (product) => product.name === name
       );
 
       if (products[productIndex].quantity === 1) {
-        
+
         return {
           ...state,
           [army]: {
-            total: side.total - price,
-            products: products.filter((product) => product.name !== name),
+            [clopType]: {
+              total: side.total - price,
+              products: products.filter((product) => product.name !== name),
+            },
           },
         };
       }
@@ -69,9 +93,11 @@ export const cart = (state = defaultState, { type, payload }) => {
       return {
         ...state,
         [army]: {
-          total: side.total - price,
-          products,
-        },
+          [clopType]: {
+            total: side.total - price,
+            products,
+          },
+        }
       };
     }
     case 'CLEAR_CART': {

@@ -6,21 +6,24 @@ import { Home, Us, Ru } from './pages';
 import { Header, Footer, Sidebar } from './components';
 import { setUnits, setCategories } from './store/catalog';
 import { Fragment } from 'react';
+import { useClopType } from './hooks';
 function App() {
   const dispatch = useDispatch();
+  const clopType = useClopType();
   const location = useLocation();
 
   useEffect(() => {
     async function fetchProducts() {
-      const { data: units } = await axios.get('https://clop.armaproject.ru/units');
-      const { data: categories } = await axios.get(
-        'https://clop.armaproject.ru/categories'
+      const { data: units } = await axios.get('http://localhost:2000/units');
+      const { data } = await axios.get(
+        'http://localhost:2000/categories'
       );
       dispatch(setUnits(units));
-      dispatch(setCategories(categories));
+      dispatch(setCategories({ categories: data, clopType }));
     }
 
     fetchProducts();
+    // eslint-disable-next-line
   }, [dispatch]);
 
   return (
@@ -32,6 +35,8 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/us' exact component={Us} />
           <Route path='/ru' exact component={Ru} />
+          <Route path='/us-light' exact component={Us} />
+          <Route path='/ru-light' exact component={Ru} />
         </Switch>
       </main>
       <Footer />

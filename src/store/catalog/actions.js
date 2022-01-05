@@ -13,7 +13,7 @@ export const setCategories = (categories) => ({
 /* Filters */
 
 export const setSelectedCategories = (categories) => ({
-  type: 'SET_SELECTED_CATEGORY',
+  type: 'SET_SELECTED_CATEGORIES',
   payload: categories,
 });
 

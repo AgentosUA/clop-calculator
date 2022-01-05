@@ -3,12 +3,12 @@ import { Card } from '../../components';
 
 import styles from './products.module.css';
 
-const Products = ({ name, products, onAdd, onRemove, total, cart, army }) => {
+const Products = ({ name, products, onAdd, onRemove, total, cart, army, clopType }) => {
   return (
     <Fragment>
-      {products.length > 0 && <h3 className={styles.title}>{name}</h3>}
+      {products?.length > 0 && <h3 className={styles.title}>{name}</h3>}
       <div className={styles.products}>
-        {products.map((vehicle) => {
+        {products?.map((vehicle) => {
           return (
             <Card
               key={vehicle.name}
@@ -36,6 +36,7 @@ const Products = ({ name, products, onAdd, onRemove, total, cart, army }) => {
                   name: vehicle.name,
                   price: vehicle.price,
                   army,
+                  clopType,
                 })
               }
               onRemove={() =>
@@ -43,11 +44,12 @@ const Products = ({ name, products, onAdd, onRemove, total, cart, army }) => {
                   name: vehicle.name,
                   price: vehicle.price,
                   army,
+                  clopType,
                 })
               }
               addDisabled={vehicle.price + total > 100}
               removeDisabled={
-                !cart[army].products.find(
+                !cart[army][clopType]?.products.find(
                   (product) => product.name === vehicle.name
                 )
               }
